@@ -1,0 +1,16 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
+  <div fxFlex="80%" fxFlex.lt-md="100%" class="flex-wrapper">
+    <ng-content></ng-content>
+
+    <p>Østlandsserien 2019/2020</p>
+
+
+    <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+      <mat-tab label="Matches"><p>All matches</p></mat-tab>
+      <mat-tab label="Players"><p>All players</p></mat-tab>
+      <mat-tab label="Teams"><p>All teams</p></mat-tab>
+      <mat-tab label="Statistics"><p>Team statistics</p></mat-tab>
+    </mat-tab-group>
+
+  </div>
+</div>

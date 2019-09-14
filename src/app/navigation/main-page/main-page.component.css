@@ -1,0 +1,15 @@
+mat-tab-group {
+  text-align: center;
+}
+
+mat-tab-group p {
+  padding-top: 20px;
+}
+
+.layout-wrapper{
+  height: 100%;
+}
+
+.flex-wrapper{
+  height: 100%;
+}
