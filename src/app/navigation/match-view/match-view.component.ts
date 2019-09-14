@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Match} from '../../models/match';
+import {MatchService} from '../../services/match.service';
 
 @Component({
   selector: 'app-match-view',
@@ -8,19 +9,13 @@ import {Match} from '../../models/match';
 })
 export class MatchViewComponent implements OnInit {
 
-  dataSource: Match[] = [
-    {date: new Date(2019, 9, 21), homeTeam: 'BMIL', awayTeam: 'Grei', location: 'Skøyenhallen'},
-    {date: new Date(2019, 9, 26), homeTeam: 'Øreåsen', awayTeam: 'BMIL', location: 'Øreåsenhallen'},
-    {date: new Date(2019, 10, 12), homeTeam: 'BMIL', awayTeam: 'Ajer', location: 'Skøyenhallen'},
-    {date: new Date(2019, 10, 27), homeTeam: 'Ull/Kisa', awayTeam: 'BMIL', location: 'Jessheim is og flerbrukshall'}
-
-  ];
+  dataSource: Match[];
   columnsToDisplay: string[] = ['date', 'homeTeam', 'awayTeam', 'location'];
 
-  constructor() {
+  constructor(private matchSerice: MatchService) {
   }
 
   ngOnInit() {
+    this.dataSource = this.matchSerice.getAllMatches();
   }
-
 }

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {MatTabChangeEvent} from '@angular/material';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
@@ -7,14 +6,9 @@ import {MatTabChangeEvent} from '@angular/material';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
-  appMenu: any;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  executeSelectedChange(event: MatTabChangeEvent) {
-    console.log('Navigating to: ' + event.tab.textLabel);
   }
 }

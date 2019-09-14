@@ -11,6 +11,9 @@ import {MatchViewComponent} from './navigation/match-view/match-view.component';
 import {PlayersViewComponent} from './navigation/players-view/players-view.component';
 import {TeamsViewComponent} from './navigation/teams-view/teams-view.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
+import {MatchDetailsComponent} from './navigation/match-details/match-details.component';
+import {RouterModule} from '@angular/router';
+import {appRoutes} from './routes';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import {StatisticsViewComponent} from './navigation/statistics-view/statistics-v
     MatchViewComponent,
     PlayersViewComponent,
     TeamsViewComponent,
-    StatisticsViewComponent
+    StatisticsViewComponent,
+    MatchDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,8 @@ import {StatisticsViewComponent} from './navigation/statistics-view/statistics-v
     MatButtonModule,
     MatTabsModule,
     FlexLayoutModule,
-    MatTableModule
+    MatTableModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
