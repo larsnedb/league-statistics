@@ -17,13 +17,11 @@ export class MatchDetailsComponent implements OnInit {
 
   match: MatchReport;
   goals: Goal[];
-  columnsToDisplay = ['time', 'scorer', 'assist', 'team', 'partial_result'];
 
   ngOnInit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.match = this.matchService.getMatch(parseInt(id, 10));
     this.goals = this.match.goals[0].goalsInOrder;
-
   }
 
   // todo larsne All matchReport properties are wrapped in single list. Annoying when propagating data to view, to always do [0]

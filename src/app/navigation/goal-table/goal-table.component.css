@@ -1,0 +1,15 @@
+.mat-column-time {
+  width: 100px;
+}
+
+.mat-column-scorer {
+  width: 200px;
+}
+
+.mat-column-assist {
+  width: 200px;
+}
+
+.mat-column-team {
+  width: 150px;
+}

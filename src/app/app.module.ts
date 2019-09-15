@@ -14,6 +14,7 @@ import {StatisticsViewComponent} from './navigation/statistics-view/statistics-v
 import {MatchDetailsComponent} from './navigation/match-details/match-details.component';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
+import {GoalTableComponent} from './navigation/goal-table/goal-table.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {appRoutes} from './routes';
     PlayersViewComponent,
     TeamsViewComponent,
     StatisticsViewComponent,
-    MatchDetailsComponent
+    MatchDetailsComponent,
+    GoalTableComponent
   ],
   imports: [
     BrowserModule,
