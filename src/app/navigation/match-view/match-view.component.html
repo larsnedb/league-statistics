@@ -4,7 +4,7 @@
 
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef>Date</th>
-    <td mat-cell *matCellDef="let match"> {{matchInfo.MatchDate | date: 'dd/MM/yy'}}</td>
+    <td mat-cell *matCellDef="let match"> {{matchInfo.MatchDate | dateNorwegian }}</td>
   </ng-container>
 
   <ng-container matColumnDef="homeTeam">

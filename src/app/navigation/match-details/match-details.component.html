@@ -1,3 +1,10 @@
+<div>
+  <p>{{matchInfo.MatchDate | dateNorwegian }}</p>
+  <p>{{matchInfo.HomeTeamName}} - {{matchInfo.AwayTeamName}}</p>
+  <p>{{matchInfo.ActivityAreaName}}</p>
+  <p>{{matchInfo.ResultsFormatted}}</p>
+
+</div>
 
 <app-goal-table [goals]="goals"></app-goal-table>
 

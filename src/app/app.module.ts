@@ -16,6 +16,7 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import {GoalTableComponent} from './navigation/goal-table/goal-table.component';
 import {PenaltiesTableComponent} from './navigation/penalties-table/penalties-table.component';
+import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {PenaltiesTableComponent} from './navigation/penalties-table/penalties-ta
     StatisticsViewComponent,
     MatchDetailsComponent,
     GoalTableComponent,
-    PenaltiesTableComponent
+    PenaltiesTableComponent,
+    DateNorwegianPipe
   ],
   imports: [
     BrowserModule,
