@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTabChangeEvent} from '@angular/material';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -8,13 +9,13 @@ import {MatTabChangeEvent} from '@angular/material';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
   }
 
   executeSelectedChange(event: MatTabChangeEvent) {
-    console.log('Navigating to: ' + event.tab.textLabel);
+    this.router.navigate([event.tab.textLabel.toLowerCase()]);
   }
 }
