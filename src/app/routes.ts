@@ -6,7 +6,7 @@ import {TeamsViewComponent} from './navigation/teams-view/teams-view.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
 
 export const appRoutes: Routes = [
-  {path: '', redirectTo: '/match', pathMatch: 'full'},
+  {path: '', redirectTo: '/matches', pathMatch: 'full'},
   {path: 'matches/:id', component: MatchDetailsComponent},
   {path: 'matches', component: MatchViewComponent},
   {path: 'players', component: PlayersViewComponent},
