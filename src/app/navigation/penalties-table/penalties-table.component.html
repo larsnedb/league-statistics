@@ -1,0 +1,26 @@
+<table mat-table [dataSource]="penalties">
+
+  <ng-container matColumnDef="awayTime">
+    <th mat-header-cell *matHeaderCellDef>AwayTime</th>
+    <td mat-cell *matCellDef="let penalty"> {{penalty["AwayTime"]}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="homeTime">
+    <th mat-header-cell *matHeaderCellDef>HomeTime</th>
+    <td mat-cell *matCellDef="let penalty"> {{penalty["HomeTime"]}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="homePenalty">
+    <th mat-header-cell *matHeaderCellDef>HomePenalty</th>
+    <td mat-cell *matCellDef="let penalty"> {{penalty["HomePenalty"]}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="awayPenalty">
+    <th mat-header-cell *matHeaderCellDef>AwayPenalty</th>
+    <td mat-cell *matCellDef="let penalty"> {{penalty["AwayPenalty"]}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let penalty; columns: columnsToDisplay;"></tr>
+
+</table>

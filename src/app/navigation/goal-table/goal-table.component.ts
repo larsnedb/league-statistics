@@ -13,7 +13,7 @@ export class GoalTableComponent implements OnInit {
 
   @Input() goals: Goal[];
 
-  columnsToDisplay = ['time', 'scorer', 'assist', 'team', 'partial_result'];
+  columnsToDisplay: string[] = ['time', 'scorer', 'assist', 'team', 'partial_result'];
 
   ngOnInit() {
   }
