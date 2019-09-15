@@ -6,6 +6,10 @@ table {
   text-align: center;
 }
 
+.mat-cell {
+  text-align: center;
+}
+
 /* Zebra */
 .mat-row:nth-child(even) {
   background-color: lightgray;

@@ -1,1 +1,4 @@
-<p>{{match.date | date: 'dd/MM/yy'}} - {{match.homeTeam}} - {{match.awayTeam}} - {{match.location}}</p>
+<p>{{match.info[0].MatchDate | date: 'dd/MM/yy'}} - {{match.info[0].HomeTeamName}} - {{match.info[0].AwayTeamName}}
+  - {{match.info[0].ActivityAreaName}}</p>
+
+<p>{{match.info[0].ResultsFormatted}}</p>
