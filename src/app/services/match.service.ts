@@ -6110,11 +6110,8 @@ export class MatchService {
   getSummaryPerTeam(): LeagueEntry[] {
     const allMatchesList: MatchForTeam[] = this.getAllMatchesList();
 
-
     const matchesPerTeam = this.getMatchesPerTeam(allMatchesList);
-
     return this.transformIntoArray(matchesPerTeam);
-
   }
 
   private transformIntoArray(matchesPerTeam: Map<string, MatchForTeam[]>): LeagueEntry[] {
@@ -6134,10 +6131,8 @@ export class MatchService {
         teamName: entry[0].teamName, stats
       });
     });
-
     return leagueTable;
   }
-
 
   private createEmptyStats(): LeagueTeam {
     return {
@@ -6166,44 +6161,40 @@ export class MatchService {
   }
 
   getAllMatchesList(): MatchForTeam[] {
-
     const matchesPerTeam = [];
     const allMatches = this.getAllMatches();
 
     allMatches.forEach(match => {
-      const endResult = match.info.EndResult.split('-');
-
       const homeTeamData: MatchForTeam = {
         teamName: this.getHomeTeam(match),
-        goalsFor: this.getHomeGoals(endResult),
-        goalsAgainst: this.getAwayGoals(endResult),
-        points: this.getMatchResult(endResult, Team.HOME),
-        matchResult: this.getMatchResult(endResult, Team.HOME)
+        goalsFor: this.getHomeGoals(match.info.EndResult),
+        goalsAgainst: this.getAwayGoals(match.info.EndResult),
+        points: this.getMatchResult(match.info.EndResult, Team.HOME),
+        matchResult: this.getMatchResult(match.info.EndResult, Team.HOME)
       };
       matchesPerTeam.push(homeTeamData);
 
       const awayTeamData: MatchForTeam = {
         teamName: this.getAwayTeam(match),
-        goalsFor: this.getAwayGoals(endResult),
-        goalsAgainst: this.getHomeGoals(endResult),
-        points: this.getMatchResult(endResult, Team.AWAY),
-        matchResult: this.getMatchResult(endResult, Team.AWAY)
+        goalsFor: this.getAwayGoals(match.info.EndResult),
+        goalsAgainst: this.getHomeGoals(match.info.EndResult),
+        points: this.getMatchResult(match.info.EndResult, Team.AWAY),
+        matchResult: this.getMatchResult(match.info.EndResult, Team.AWAY)
       };
       matchesPerTeam.push(awayTeamData);
-
     });
     return matchesPerTeam;
   }
 
-  private getAwayTeam(match) {
+  private getAwayTeam(match: MatchReport): string {
     return match.info.AwayTeamName;
   }
 
-  private getHomeTeam(match) {
+  private getHomeTeam(match: MatchReport): string {
     return match.info.HomeTeamName;
   }
 
-  private getMatchResult(endResult: string[], team: Team): MatchResult {
+  private getMatchResult(endResult: string, team: Team): MatchResult {
     if (team === Team.HOME) {
       return this.getHomeGoals(endResult) > this.getAwayGoals(endResult) ?
         MatchResult.WIN :
@@ -6214,11 +6205,11 @@ export class MatchService {
       MatchResult.WIN;
   }
 
-  private getAwayGoals(endResult) {
-    return parseInt(endResult[1], 10);
+  private getAwayGoals(endResult: string): number {
+    return parseInt(endResult.split('-')[1], 10);
   }
 
-  private getHomeGoals(endResult) {
-    return parseInt(endResult[0], 10);
+  private getHomeGoals(endResult: string): number {
+    return parseInt(endResult.split('-')[0], 10);
   }
 }
