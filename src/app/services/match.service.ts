@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
-import {MatchReport} from '../models/match-report.model';
+import {ComplexMatchReport} from '../models/complex-match-report.model';
 import {MatchForTeam} from '../models/match-for-team.model';
 import {MatchResult} from '../models/match-result.enum';
 import {Team} from '../models/team.enum';
 import {LeagueEntry} from '../models/league-entry.model';
 import {LeagueTeam} from '../models/league-team.model';
+import {MatchReport} from '../models/match-report.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class MatchService {
   constructor() {
   }
 
-  matches: MatchReport[] = [
+  matches: ComplexMatchReport[] = [
     {
       info: [
         {
@@ -6084,14 +6085,27 @@ export class MatchService {
   ];
 
   getAllMatches(): MatchReport[] {
-    return this.matches;
+    const simples = [];
+    this.matches.forEach(complex => {
+      simples.push(this.simplifyMatchObject(complex));
+    });
+    return simples;
   }
 
   getMatch(id: number): MatchReport {
-    return this.matches
+    const complexMatchReport = this.matches
       .find(match => parseInt(match.info[0].MatchNo, 10) === id);
+    return this.simplifyMatchObject(complexMatchReport);
   }
 
+  private simplifyMatchObject(matchReport: ComplexMatchReport): MatchReport {
+    return {
+      info: matchReport.info[0],
+      pens: matchReport.pens[0],
+      Goals: matchReport.Goals[0],
+      participants: matchReport.participants[0]
+    };
+  }
 
   getSummaryPerTeam(): LeagueEntry[] {
     const allMatchesList: MatchForTeam[] = this.getAllMatchesList();
@@ -6157,7 +6171,7 @@ export class MatchService {
     const allMatches = this.getAllMatches();
 
     allMatches.forEach(match => {
-      const endResult = match.info[0].EndResult.split('-');
+      const endResult = match.info.EndResult.split('-');
 
       const homeTeamData: MatchForTeam = {
         teamName: this.getHomeTeam(match),
@@ -6182,11 +6196,11 @@ export class MatchService {
   }
 
   private getAwayTeam(match) {
-    return match.info[0].AwayTeamName;
+    return match.info.AwayTeamName;
   }
 
   private getHomeTeam(match) {
-    return match.info[0].HomeTeamName;
+    return match.info.HomeTeamName;
   }
 
   private getMatchResult(endResult: string[], team: Team): MatchResult {

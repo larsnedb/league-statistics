@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatchService} from '../../services/match.service';
-import {MatchReport} from '../../models/match-report.model';
+import {ComplexMatchReport} from '../../models/complex-match-report.model';
 
 @Component({
   selector: 'app-match-view',
@@ -9,7 +9,7 @@ import {MatchReport} from '../../models/match-report.model';
 })
 export class MatchViewComponent implements OnInit {
 
-  matches: MatchReport[];
+  matches: ComplexMatchReport[];
   columnsToDisplay: string[] = ['date', 'homeTeam', 'awayTeam', 'location'];
 
   constructor(private matchService: MatchService) {

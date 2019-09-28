@@ -4,25 +4,25 @@
 
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef>Date</th>
-    <td mat-cell *matCellDef="let match"> {{match.info[0].MatchDate | dateNorwegian }}</td>
+    <td mat-cell *matCellDef="let match"> {{match.info.MatchDate | dateNorwegian }}</td>
   </ng-container>
 
   <ng-container matColumnDef="homeTeam">
     <th mat-header-cell *matHeaderCellDef>Home team</th>
-    <td mat-cell *matCellDef="let match"> {{match.info[0].HomeTeamName}} </td>
+    <td mat-cell *matCellDef="let match"> {{match.info.HomeTeamName}} </td>
   </ng-container>
 
   <ng-container matColumnDef="awayTeam">
     <th mat-header-cell *matHeaderCellDef>Away team</th>
-    <td mat-cell *matCellDef="let match"> {{match.info[0].AwayTeamName}} </td>
+    <td mat-cell *matCellDef="let match"> {{match.info.AwayTeamName}} </td>
   </ng-container>
 
   <ng-container matColumnDef="location">
     <th mat-header-cell *matHeaderCellDef>Location</th>
-    <td mat-cell *matCellDef="let match"> {{match.info[0].ActivityAreaName}} </td>
+    <td mat-cell *matCellDef="let match"> {{match.info.ActivityAreaName}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-  <tr mat-row *matRowDef="let match; columns: columnsToDisplay;" [routerLink]="[match.info[0].MatchNo]"></tr>
+  <tr mat-row *matRowDef="let match; columns: columnsToDisplay;" [routerLink]="[match.info.MatchNo]"></tr>
 
 </table>
