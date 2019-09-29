@@ -17,6 +17,7 @@ import {appRoutes} from './routes';
 import {GoalTableComponent} from './navigation/goal-table/goal-table.component';
 import {PenaltiesTableComponent} from './navigation/penalties-table/penalties-table.component';
 import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
     MatTabsModule,
     FlexLayoutModule,
     MatTableModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FileReaderService} from '../../services/file-reader.service';
 
 @Component({
   selector: 'app-statistics-view',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatisticsViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fileReader: FileReaderService) {
+  }
 
   ngOnInit() {
+    this.fileReader.readFiles();
   }
 
 }
