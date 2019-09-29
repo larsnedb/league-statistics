@@ -6120,9 +6120,13 @@ export class MatchService {
     matchesPerTeam.forEach(entry => {
       const stats: LeagueTeam = this.createEmptyStats();
       entry.forEach(matchEntry => {
-        stats.points += matchEntry.goalsFor > matchEntry.goalsAgainst ? 3 : 0;
+
+        const matchResult: MatchResult = this.getPointsForMatch(matchEntry);
+        stats.points += matchResult;
         stats.victories += matchEntry.goalsFor > matchEntry.goalsAgainst ? 1 : 0;
+        stats.penaltyVictories += this.getPenaltyVictory(matchResult);
         stats.losses += matchEntry.goalsFor < matchEntry.goalsAgainst ? 1 : 0;
+        stats.lossPenalties += this.getPenaltyLoss(matchResult);
         stats.goalsFor += matchEntry.goalsFor;
         stats.goalsAgainst += matchEntry.goalsAgainst;
         stats.matchesPlayed++;
@@ -6132,6 +6136,27 @@ export class MatchService {
       });
     });
     return leagueTable;
+  }
+
+  private getPenaltyVictory(matchResult: MatchResult) {
+    return matchResult === MatchResult.WIN_PENS ? 1 : 0;
+  }
+
+  private getPenaltyLoss(matchResult: MatchResult) {
+    return matchResult === MatchResult.LOSS_PENS ? 1 : 0;
+  }
+
+  private getPointsForMatch(matchEntry: MatchForTeam): number {
+    if (matchEntry.penalties) {
+      if (matchEntry.goalsFor > matchEntry.goalsAgainst) {
+        return MatchResult.WIN_PENS;
+      } else {
+        return MatchResult.LOSS_PENS;
+      }
+    }
+    return matchEntry.goalsFor > matchEntry.goalsAgainst
+      ? MatchResult.WIN
+      : MatchResult.LOSS;
   }
 
   private createEmptyStats(): LeagueTeam {
@@ -6170,7 +6195,8 @@ export class MatchService {
         goalsFor: this.getHomeGoals(match.info.EndResult),
         goalsAgainst: this.getAwayGoals(match.info.EndResult),
         points: this.getMatchResult(match.info.EndResult, Team.HOME),
-        matchResult: this.getMatchResult(match.info.EndResult, Team.HOME)
+        matchResult: this.getMatchResult(match.info.EndResult, Team.HOME),
+        penalties: this.isPenaltyShooutout(match.info.PartialResult)
       };
       matchesPerTeam.push(homeTeamData);
 
@@ -6179,7 +6205,8 @@ export class MatchService {
         goalsFor: this.getAwayGoals(match.info.EndResult),
         goalsAgainst: this.getHomeGoals(match.info.EndResult),
         points: this.getMatchResult(match.info.EndResult, Team.AWAY),
-        matchResult: this.getMatchResult(match.info.EndResult, Team.AWAY)
+        matchResult: this.getMatchResult(match.info.EndResult, Team.AWAY),
+        penalties: this.isPenaltyShooutout(match.info.PartialResult)
       };
       matchesPerTeam.push(awayTeamData);
     });
@@ -6211,5 +6238,10 @@ export class MatchService {
 
   private getHomeGoals(endResult: string): number {
     return parseInt(endResult.split('-')[0], 10);
+  }
+
+  private isPenaltyShooutout(partialResult: string) {
+    const numberOfPeriodes = partialResult.split(',');
+    return numberOfPeriodes.length === 4;
   }
 }

@@ -6,4 +6,5 @@ export interface MatchForTeam {
   goalsAgainst: number;
   points: number;
   matchResult: MatchResult;
+  penalties: boolean;
 }
