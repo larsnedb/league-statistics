@@ -1,0 +1,719 @@
+{
+  "info": [
+    {
+      "ActivityAreaId": 213920,
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "TournamentId": 383884,
+      "Referees": [
+        {
+          "PersonId": 4111283,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=bFpIWjJSenVHdzhDTDI2N1lPbmFhUT090",
+          "RefereeId": 222279,
+          "Name": "Dommer Jan Magnar Ingebrigtsli"
+        },
+        {
+          "PersonId": 6048555,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=K3RscENHT3grUkpURTNuN3FVY2I3Zz090",
+          "RefereeId": 223157,
+          "Name": "Dommer Bjørn Aksel Henriksen"
+        }
+      ],
+      "HomeTeamName": "Lyn",
+      "ActivityAreaName": "Bjølsen matchbane",
+      "EventTeamInfo": "Lyn - BMIL",
+      "MatchDate": "2019-01-20T00:00:00",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=213920",
+      "LinkId": 6861142,
+      "Public": "23",
+      "MatchNo": "1331202060",
+      "MatchDateFormatted": "20.01.2019",
+      "ResultsFormatted": "7-8 (0-3, 3-1, 4-3, 0-1)",
+      "SeasonId": 200834,
+      "ActivityName": "Innebandy",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=15",
+      "PartialResult": " 0-3, 3-1, 4-3, 0-1",
+      "Time": "15:00 - 17:04",
+      "AwayTeamName": "BMIL",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "RoundId": 15,
+      "HasMatchReportFile": true,
+      "HomeTeamId": 581673,
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861142",
+      "MatchId": 6861142,
+      "RoundName": "Runde 15",
+      "AwayTeamId": 581680,
+      "TournamentName": "1. div. østland menn - NBF",
+      "EndResult": "7-8"
+    }
+  ],
+  "participants": [
+    {
+      "AwayOwnGoals": [],
+      "AwayGoalies": [
+        {
+          "ShirtNo": "12",
+          "Goals": 4,
+          "Shots": 21,
+          "IsAlternateCaptain": false,
+          "FullName": "Lasse Anthonisen",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "26",
+          "Goals": 3,
+          "Shots": 10,
+          "IsAlternateCaptain": false,
+          "FullName": "Bendik Hannisdal Endestad",
+          "IsCaptain": false
+        }
+      ],
+      "HomeGoalies": [
+        {
+          "ShirtNo": "1",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kimmy Emil Christensen",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "30",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Aleksander Tyrspappa Grimstad",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "81",
+          "Goals": 7,
+          "Shots": 26,
+          "IsAlternateCaptain": false,
+          "FullName": "Itrat Zishan",
+          "IsCaptain": false
+        }
+      ],
+      "AwayPlayers": [
+        {
+          "ShirtNo": "4 ",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Andreas Ervik Heggernes",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "5",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Mads Sand Dørstad",
+          "IsCaptain": true,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "6",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Truls Eriksen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "9",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Sondre Knudsen Røstgård",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "10",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Thomas Bergsmark",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "12",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Lasse Anthonisen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "13",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Truls Havre",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "15",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Sigurd Angell Berg",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "18",
+          "SquadIndividualCategoryId": 1,
+          "Points": 3,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Aksel Tjøtta Stenvold",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "19",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Michael Zlatan Sven Åsberg",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "20",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Andre Antonio Valente",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "23",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Martin Slind Hagen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "25",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Frederic Ringvold Westheim",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "26",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Bendik Hannisdal Endestad",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "29",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Bendik Fürst Mustad",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "31",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kim Haldorsen Straumsnes",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "33",
+          "SquadIndividualCategoryId": 1,
+          "Points": 3,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Tom Egil Arnesen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "41",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Georg Bugge",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "50",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Emil Varre Sandøy",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ],
+      "HomeCoaches": [
+        {
+          "FullName": "Katarina Sofia Eriksson"
+        },
+        {
+          "FullName": "Kenneth Lorentzen"
+        }
+      ],
+      "AwayCoaches": [
+        {
+          "FullName": "Bjørn-Erik Thorp"
+        },
+        {
+          "FullName": "John Kjetil Bergsmark"
+        }
+      ],
+      "HomeOwnGoals": [],
+      "HomePlayers": [
+        {
+          "ShirtNo": "1",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kimmy Emil Christensen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "4",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Julia Paulina Johannesson",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "7",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Lars Petter Kandre",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "9",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Simon Thomas Persson",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "14",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Oskar Kristoffer Persson",
+          "IsCaptain": true,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "18",
+          "SquadIndividualCategoryId": 1,
+          "Points": 3,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Espen Kjerup Jørgensen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "19",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Nicklas Regin",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "22",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Oscar A Ojala",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "24",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Nicholas Paulsen Lohrmann",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "30",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Aleksander Tyrspappa Grimstad",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "68",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Henrik Svanæs",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "71",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Christoffer Boganes Vadla",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "76",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Per Hampus Johnsson",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "81",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Itrat Zishan",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Hau Thanh Le",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ]
+    }
+  ],
+  "pens": [
+    {
+      "AwayTeam": "BMIL",
+      "HomeTeam": "Lyn",
+      "Penalties": [
+        {
+          "AwayTime": "3 - 08:51",
+          "HomeTime": "1 - 14:03",
+          "HomePenalty": "19. Nicklas Regin, 2 min, Ulovlig dytt (mot vant eller målbur)",
+          "AwayPenalty": "31. Kim Haldorsen Straumsnes, 2 min, Slag"
+        },
+        {
+          "AwayTime": "3 - 19:14",
+          "HomeTime": "3 - 09:47",
+          "HomePenalty": "71. Christoffer Boganes Vadla, 2 min, Slag",
+          "AwayPenalty": "20. Andre Antonio Valente, 2 min, Hardt spill"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "goalsInOrder": [
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "5. Mads Sand Dørstad",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "0-1",
+          "Scorer": "41. Georg Bugge",
+          "Time": "1 - 11:10",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "33. Tom Egil Arnesen",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "0-2",
+          "Scorer": "5. Mads Sand Dørstad",
+          "Time": "1 - 13:46",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "13. Truls Havre",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "0-3",
+          "Scorer": "33. Tom Egil Arnesen",
+          "Time": "1 - 16:33",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "0-4",
+          "Scorer": "33. Tom Egil Arnesen",
+          "Time": "2 - 01:58",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "18. Espen Kjerup Jørgensen",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "1-4",
+          "Scorer": "7. Lars Petter Kandre",
+          "Time": "2 - 06:27",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "18. Espen Kjerup Jørgensen",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "2-4",
+          "Scorer": "4. Julia Paulina Johannesson",
+          "Time": "2 - 14:06",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "9. Simon Thomas Persson",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "3-4",
+          "Scorer": "22. Oscar A Ojala",
+          "Time": "2 - 16:57",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "18. Aksel Tjøtta Stenvold",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "3-5",
+          "Scorer": "15. Sigurd Angell Berg",
+          "Time": "3 - 01:49",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "7. Lars Petter Kandre",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "4-5",
+          "Scorer": "18. Espen Kjerup Jørgensen",
+          "Time": "3 - 05:31",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "18. Aksel Tjøtta Stenvold",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "4-6",
+          "Scorer": "4 . Andreas Ervik Heggernes",
+          "Time": "3 - 06:23",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "20. Andre Antonio Valente",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "4-7",
+          "Scorer": "18. Aksel Tjøtta Stenvold",
+          "Time": "3 - 11:15",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "19. Nicklas Regin",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "5-7",
+          "Scorer": "71. Christoffer Boganes Vadla",
+          "Time": "3 - 14:32",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": true,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "6-7",
+          "Scorer": "22. Oscar A Ojala (Straffeslag)",
+          "Time": "3 - 19:41",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+          "Assist": "19. Nicklas Regin",
+          "TeamName": "Lyn Innebandy",
+          "IsOwnGoal": false,
+          "PartialResult": "7-7",
+          "Scorer": "14. Oskar Kristoffer Persson",
+          "Time": "3 - 19:53",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+          "Assist": "",
+          "TeamName": "BMIL Herrer 1",
+          "IsOwnGoal": false,
+          "PartialResult": "7-8",
+          "Scorer": " ",
+          "Time": "Str",
+          "IsHomeGoal": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "info": [
+    {
+      "ActivityAreaId": 215187,
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "TournamentId": 383884,
+      "Referees": [
+        {
+          "PersonId": 7749329,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=bUZsVVlXbkRFUTVFTFlxM2YzcXVMQT090",
+          "RefereeId": 223153,
+          "Name": "Dommer Bjørn Einar Rønningen"
+        },
+        {
+          "PersonId": 7811780,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=V1JON2k0WG1YVGd4RmxrV0h2Sy9adz090",
+          "RefereeId": 228321,
+          "Name": "Dommer Snorre Peter Korrell"
+        }
+      ],
+      "HomeTeamName": "Vålerenga",
+      "ActivityAreaName": "Teglverket idrettshall",
+      "EventTeamInfo": "Vålerenga - Grei",
+      "MatchDate": "2019-02-17T00:00:00",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=215187",
+      "LinkId": 6861151,
+      "Public": "11",
+      "MatchNo": "1331202069",
+      "MatchDateFormatted": "17.02.2019",
+      "ResultsFormatted": "13-5 (3-2, 5-0, 5-3)",
+      "SeasonId": 200834,
+      "ActivityName": "Innebandy",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=18",
+      "PartialResult": " 3-2, 5-0, 5-3",
+      "Time": "15:00 - 16:59",
+      "AwayTeamName": "Grei",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "RoundId": 18,
+      "HasMatchReportFile": true,
+      "HomeTeamId": 580780,
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861151",
+      "MatchId": 6861151,
+      "RoundName": "Runde 18",
+      "AwayTeamId": 504455,
+      "TournamentName": "1. div. østland menn - NBF",
+      "EndResult": "13-5"
+    }
+  ],
+  "participants": [
+    {
+      "AwayOwnGoals": [],
+      "AwayGoalies": [
+        {
+          "ShirtNo": "1",
+          "Goals": 13,
+          "Shots": 29,
+          "IsAlternateCaptain": false,
+          "FullName": "Kavinthan Gunaratnam",
+          "IsCaptain": false
+        }
+      ],
+      "HomeGoalies": [
+        {
+          "ShirtNo": "1",
+          "Goals": 5,
+          "Shots": 18,
+          "IsAlternateCaptain": false,
+          "FullName": "Jørgen Skaug",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "32",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kristian Skaug",
+          "IsCaptain": false
+        }
+      ],
+      "AwayPlayers": [
+        {
+          "ShirtNo": "1",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kavinthan Gunaratnam",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "9",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Erik Eck Jørgensen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "12",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Jørgen Kvasnes",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "14",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Daniel Gundersen Engebretsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "17",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Jimmi Benteson Bruland",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "18",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Stian Teksdal",
+          "IsCaptain": true,
+          "Penalties": 7
+        },
+        {
+          "ShirtNo": "19",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Lasse Kvasnes",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "22",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Christoffer Ellingham",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "25",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Lars Arne Rønningen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "44",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Marko Johannes Länsman",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "48",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Eivind Hindrum",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "49",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Glenn Børmarken",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ],
+      "HomeCoaches": [
+        {
+          "FullName": "Kenneth Christian Ahlfors"
+        }
+      ],
+      "AwayCoaches": [
+        {
+          "FullName": "Christoffer Maarud Lundgreen"
+        },
+        {
+          "FullName": "Claus Jørgen Kvasnes"
+        },
+        {
+          "FullName": "Steinar Engebretsen"
+        }
+      ],
+      "HomeOwnGoals": [],
+      "HomePlayers": [
+        {
+          "ShirtNo": "1",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Jørgen Skaug",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "8",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Magnus Kjell",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "9",
+          "SquadIndividualCategoryId": 1,
+          "Points": 4,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 4,
+          "IsAlternateCaptain": false,
+          "FullName": "Hans Lukas Larsson",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "10",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Mathias Erik Johan Sjökvist",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "13",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Victor Gustaf Ekestubbe",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "14",
+          "SquadIndividualCategoryId": 1,
+          "Points": 3,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Jesper Pedersen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "17",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Bengt Mikael Sundberg",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "21",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Peter Johannes Holback",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "22",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Filip Vamnes",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "27",
+          "SquadIndividualCategoryId": 1,
+          "Points": 5,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 5,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Niclas Johansson",
+          "IsCaptain": true,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "32",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kristian Skaug",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "41",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Joakim Sondre Marthinsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "71",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Sindre Sebastian Halvorsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "74",
+          "SquadIndividualCategoryId": 1,
+          "Points": 7,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 3,
+          "Goals": 4,
+          "IsAlternateCaptain": false,
+          "FullName": "Mats Løkken",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ]
+    }
+  ],
+  "pens": [
+    {
+      "AwayTeam": "Grei",
+      "HomeTeam": "Vålerenga",
+      "Penalties": [
+        {
+          "AwayTime": "2 - 07:13",
+          "HomeTime": "2 - 07:13",
+          "HomePenalty": "9. Hans Lukas Larsson, 2 min, Hardt spill",
+          "AwayPenalty": "18. Stian Teksdal, 5 min, Hardt spill"
+        },
+        {
+          "AwayTime": "3 - 16:54",
+          "HomeTime": "2 - 19:51",
+          "HomePenalty": "10. Mathias Erik Johan Sjökvist, 2 min, Protest",
+          "AwayPenalty": "18. Stian Teksdal, 2 min, Hardt spill"
+        },
+        {
+          "AwayTime": "",
+          "HomeTime": "2 - 19:51",
+          "HomePenalty": "27. Niclas Johansson, 2 min, Forsinkelse av spillet",
+          "AwayPenalty": ""
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "goalsInOrder": [
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "21. Peter Johannes Holback",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "1-0",
+          "Scorer": "71. Sindre Sebastian Halvorsen",
+          "Time": "1 - 14:56",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+          "Assist": "48. Eivind Hindrum",
+          "TeamName": "Grei",
+          "IsOwnGoal": false,
+          "PartialResult": "1-1",
+          "Scorer": "14. Daniel Gundersen Engebretsen",
+          "Time": "1 - 15:39",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+          "Assist": "44. Marko Johannes Länsman",
+          "TeamName": "Grei",
+          "IsOwnGoal": false,
+          "PartialResult": "1-2",
+          "Scorer": "9. Erik Eck Jørgensen",
+          "Time": "1 - 15:54",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "27. Niclas Johansson",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "2-2",
+          "Scorer": "9. Hans Lukas Larsson",
+          "Time": "1 - 16:20",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "21. Peter Johannes Holback",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "3-2",
+          "Scorer": "74. Mats Løkken",
+          "Time": "1 - 18:18",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "13. Victor Gustaf Ekestubbe",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "4-2",
+          "Scorer": "74. Mats Løkken",
+          "Time": "2 - 09:34",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "27. Niclas Johansson",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "5-2",
+          "Scorer": "74. Mats Løkken",
+          "Time": "2 - 12:08",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "10. Mathias Erik Johan Sjökvist",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "6-2",
+          "Scorer": "9. Hans Lukas Larsson",
+          "Time": "2 - 13:18",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "74. Mats Løkken",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "7-2",
+          "Scorer": "14. Jesper Pedersen",
+          "Time": "2 - 16:00",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "14. Jesper Pedersen",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "8-2",
+          "Scorer": "74. Mats Løkken",
+          "Time": "2 - 18:17",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+          "Assist": "44. Marko Johannes Länsman",
+          "TeamName": "Grei",
+          "IsOwnGoal": false,
+          "PartialResult": "8-3",
+          "Scorer": "9. Erik Eck Jørgensen",
+          "Time": "3 - 02:15",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+          "Assist": "14. Daniel Gundersen Engebretsen",
+          "TeamName": "Grei",
+          "IsOwnGoal": false,
+          "PartialResult": "8-4",
+          "Scorer": "19. Lasse Kvasnes",
+          "Time": "3 - 02:39",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "27. Niclas Johansson",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "9-4",
+          "Scorer": "10. Mathias Erik Johan Sjökvist",
+          "Time": "3 - 05:28",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "27. Niclas Johansson",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "10-4",
+          "Scorer": "9. Hans Lukas Larsson",
+          "Time": "3 - 12:37",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "74. Mats Løkken",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "11-4",
+          "Scorer": "17. Bengt Mikael Sundberg",
+          "Time": "3 - 13:35",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+          "Assist": "",
+          "TeamName": "Grei",
+          "IsOwnGoal": false,
+          "PartialResult": "11-5",
+          "Scorer": "17. Jimmi Benteson Bruland",
+          "Time": "3 - 14:28",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "74. Mats Løkken",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "12-5",
+          "Scorer": "14. Jesper Pedersen",
+          "Time": "3 - 15:37",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+          "Assist": "27. Niclas Johansson",
+          "TeamName": "Vålerenga",
+          "IsOwnGoal": false,
+          "PartialResult": "13-5",
+          "Scorer": "9. Hans Lukas Larsson",
+          "Time": "3 - 17:31",
+          "IsHomeGoal": true
+        }
+      ]
+    }
+  ]
+}

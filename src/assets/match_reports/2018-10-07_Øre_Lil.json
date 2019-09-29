@@ -1,0 +1,661 @@
+{
+  "info": [
+    {
+      "ActivityAreaId": 214809,
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "TournamentId": 383884,
+      "Referees": [
+        {
+          "PersonId": 4886969,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=VCtmOG56YzVxajR4RGlGcnplRm9Mdz090",
+          "RefereeId": 226843,
+          "Name": "Dommer Rune Davidsen"
+        },
+        {
+          "PersonId": 7149373,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=Q2lyR3NiZVBIUi9Xd3g0dnYxZjdXdz090",
+          "RefereeId": 228053,
+          "Name": "Dommer Tommy Eriksen"
+        }
+      ],
+      "HomeTeamName": "Øreåsen",
+      "ActivityAreaName": "Øreåsenhallen",
+      "EventTeamInfo": "Øreåsen - Lillestrøm",
+      "MatchDate": "2018-10-07T00:00:00",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=214809",
+      "LinkId": 6861097,
+      "Public": "50",
+      "MatchNo": "1331202015",
+      "MatchDateFormatted": "07.10.2018",
+      "ResultsFormatted": "9-7 (5-2, 0-3, 4-2)",
+      "SeasonId": 200834,
+      "ActivityName": "Innebandy",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=4",
+      "PartialResult": " 5-2, 0-3, 4-2",
+      "Time": "14:00 - 15:20",
+      "AwayTeamName": "Lillestrøm",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+      "RoundId": 4,
+      "HasMatchReportFile": true,
+      "HomeTeamId": 530254,
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861097",
+      "MatchId": 6861097,
+      "RoundName": "Runde 4",
+      "AwayTeamId": 581696,
+      "TournamentName": "1. div. østland menn - NBF",
+      "EndResult": "9-7"
+    }
+  ],
+  "participants": [
+    {
+      "AwayOwnGoals": [],
+      "AwayGoalies": [
+        {
+          "ShirtNo": "35",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Peter Ingemar Danielsson",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "99",
+          "Goals": 9,
+          "Shots": 19,
+          "IsAlternateCaptain": false,
+          "FullName": "Christian Hylen Beck",
+          "IsCaptain": false
+        }
+      ],
+      "HomeGoalies": [
+        {
+          "ShirtNo": "1",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Marius Hemstad",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "24",
+          "Goals": 7,
+          "Shots": 18,
+          "IsAlternateCaptain": false,
+          "FullName": "Ole-Martin Egge",
+          "IsCaptain": false
+        },
+        {
+          "ShirtNo": "69",
+          "Goals": 0,
+          "Shots": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Jonas Lillevik",
+          "IsCaptain": false
+        }
+      ],
+      "AwayPlayers": [
+        {
+          "ShirtNo": "2",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Patrik Haugland",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "11",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kenneth Rønningen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "16",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Christer Andre Nydahl",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "17",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Kristian Wiker Holmemo",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "22",
+          "SquadIndividualCategoryId": 1,
+          "Points": 4,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 3,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Anders Nordhagen",
+          "IsCaptain": true,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "23",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Joakim Melvold",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "31",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Per Nils Pontus Lundberg",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "33",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Filip Pokorny",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "34",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Ole Bastian Kolstad Løchen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "35",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Peter Ingemar Danielsson",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "42",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Sondre Stokke",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "88",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Kimsander Ingebretsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "99",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Christian Hylen Beck",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ],
+      "HomeCoaches": [
+        {
+          "FullName": "Espen Jakobsen"
+        },
+        {
+          "FullName": "Jørgen Christensen"
+        }
+      ],
+      "AwayCoaches": [
+        {
+          "FullName": "Kim Tobias Härnlund"
+        }
+      ],
+      "HomeOwnGoals": [],
+      "HomePlayers": [
+        {
+          "ShirtNo": "1",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Marius Hemstad",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "5",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Tommy Kristiansen",
+          "IsCaptain": true,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "6",
+          "SquadIndividualCategoryId": 1,
+          "Points": 4,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 3,
+          "IsAlternateCaptain": false,
+          "FullName": "Bengt Mathias Schölin",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "8",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Christoffer Mørch Olsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "13",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Daniel Gustav Baronowsky",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "14",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Sander Sørby Pedersen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "15",
+          "SquadIndividualCategoryId": 1,
+          "Points": 3,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 2,
+          "Goals": 1,
+          "IsAlternateCaptain": false,
+          "FullName": "Niclas Antonsen",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "17",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Christian Olsen",
+          "IsCaptain": false,
+          "Penalties": 2
+        },
+        {
+          "ShirtNo": "19",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Marcus Skillebekk Halvorsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "24",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Ole-Martin Egge",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "26",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Hans Petter Hasle Nilsen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "69",
+          "SquadIndividualCategoryId": 1,
+          "Points": 0,
+          "SquadIndividualTypeId": 1011,
+          "Assists": 0,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Jonas Lillevik",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "77",
+          "SquadIndividualCategoryId": 1,
+          "Points": 2,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 0,
+          "Goals": 2,
+          "IsAlternateCaptain": false,
+          "FullName": "Stian Jensen",
+          "IsCaptain": false,
+          "Penalties": 0
+        },
+        {
+          "ShirtNo": "87",
+          "SquadIndividualCategoryId": 1,
+          "Points": 1,
+          "SquadIndividualTypeId": 1006,
+          "Assists": 1,
+          "Goals": 0,
+          "IsAlternateCaptain": false,
+          "FullName": "Markus Jensen",
+          "IsCaptain": false,
+          "Penalties": 0
+        }
+      ]
+    }
+  ],
+  "pens": [
+    {
+      "AwayTeam": "Lillestrøm",
+      "HomeTeam": "Øreåsen",
+      "Penalties": [
+        {
+          "AwayTime": "1 - 09:30",
+          "HomeTime": "1 - 04:29",
+          "HomePenalty": "17. Christian Olsen, 2 min, Hardt spill",
+          "AwayPenalty": "42. Sondre Stokke, 2 min, Ulovlig dytt (mot vant eller målbur)"
+        },
+        {
+          "AwayTime": "1 - 16:07",
+          "HomeTime": "1 - 12:36",
+          "HomePenalty": "13. Daniel Gustav Baronowsky, 2 min, Protest",
+          "AwayPenalty": "22. Anders Nordhagen, 2 min, Spill uten kølle"
+        },
+        {
+          "AwayTime": "2 - 14:17",
+          "HomeTime": "2 - 04:06",
+          "HomePenalty": "15. Niclas Antonsen, 2 min, Slag",
+          "AwayPenalty": "17. Kristian Wiker Holmemo, 2 min, Obstruksjon"
+        },
+        {
+          "AwayTime": "3 - 08:16",
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayPenalty": "23. Joakim Melvold, 2 min, Slag"
+        },
+        {
+          "AwayTime": "3 - 13:56",
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayPenalty": "16. Christer Andre Nydahl, 2 min, Slag"
+        }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "goalsInOrder": [
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "22. Anders Nordhagen",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "0-1",
+          "Scorer": "16. Christer Andre Nydahl",
+          "Time": "1 - 05:19",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "22. Anders Nordhagen",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "0-2",
+          "Scorer": "2. Patrik Haugland",
+          "Time": "1 - 05:37",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": true,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "1-2",
+          "Scorer": "6. Bengt Mathias Schölin (Straffeslag)",
+          "Time": "1 - 05:45",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "2-2",
+          "Scorer": "19. Marcus Skillebekk Halvorsen",
+          "Time": "1 - 06:46",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "15. Niclas Antonsen",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "3-2",
+          "Scorer": "6. Bengt Mathias Schölin",
+          "Time": "1 - 11:04",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "4-2",
+          "Scorer": "15. Niclas Antonsen",
+          "Time": "1 - 17:12",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "87. Markus Jensen",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "5-2",
+          "Scorer": "77. Stian Jensen",
+          "Time": "1 - 17:42",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": true,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "5-3",
+          "Scorer": "34. Ole Bastian Kolstad Løchen (Straffeslag)",
+          "Time": "2 - 09:03",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "23. Joakim Melvold",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "5-4",
+          "Scorer": "22. Anders Nordhagen",
+          "Time": "2 - 16:29",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "22. Anders Nordhagen",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "5-5",
+          "Scorer": "17. Kristian Wiker Holmemo",
+          "Time": "2 - 18:35",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "15. Niclas Antonsen",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "6-5",
+          "Scorer": "13. Daniel Gustav Baronowsky",
+          "Time": "3 - 01:43",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "88. Kimsander Ingebretsen",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "6-6",
+          "Scorer": "42. Sondre Stokke",
+          "Time": "3 - 02:40",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "5. Tommy Kristiansen",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "7-6",
+          "Scorer": "6. Bengt Mathias Schölin",
+          "Time": "3 - 06:17",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "6. Bengt Mathias Schölin",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "8-6",
+          "Scorer": "19. Marcus Skillebekk Halvorsen",
+          "Time": "3 - 07:55",
+          "IsHomeGoal": true
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+          "Assist": "88. Kimsander Ingebretsen",
+          "TeamName": "Lillestrøm Innebandyklubb",
+          "IsOwnGoal": false,
+          "PartialResult": "8-7",
+          "Scorer": "42. Sondre Stokke",
+          "Time": "3 - 12:04",
+          "IsHomeGoal": false
+        },
+        {
+          "IsPenaltyGoal": false,
+          "TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+          "Assist": "8. Christoffer Mørch Olsen",
+          "TeamName": "Øreåsen",
+          "IsOwnGoal": false,
+          "PartialResult": "9-7",
+          "Scorer": "77. Stian Jensen",
+          "Time": "3 - 13:27",
+          "IsHomeGoal": true
+        }
+      ]
+    }
+  ]
+}
