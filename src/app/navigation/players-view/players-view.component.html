@@ -1,10 +1,19 @@
-<p>All players</p>
+<h3>Players</h3>
 
 
-<h1>Participants</h1>
+<mat-form-field>
+  <mat-label>Choose team</mat-label>
+  <mat-select [(value)]="selectedTeam" (valueChange)="filterTeam($event)">
+    <mat-option value="All teams">All teams</mat-option>
+    <mat-option value="BMIL">BMIL</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>You selected: {{selectedTeam}}</p>
 
 
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
   <ng-container matColumnDef="playername">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Player</th>
     <td mat-cell *matCellDef="let player"> {{player.name}}</td>

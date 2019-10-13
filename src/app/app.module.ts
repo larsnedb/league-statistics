@@ -5,7 +5,18 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MainPageComponent} from './navigation/main-page/main-page.component';
-import {MatButtonModule, MatIconModule, MatMenuModule, MatSortModule, MatTableModule, MatTabsModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatListModule,
+  MatMenuModule,
+  MatSelectModule,
+  MatSortModule,
+  MatTableModule,
+  MatTabsModule
+} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatchTopViewComponent} from './navigation/match-view/match-top-view/match-top-view.component';
 import {PlayersViewComponent} from './navigation/players-view/players-view.component';
@@ -18,6 +29,7 @@ import {GoalTableComponent} from './navigation/match-view/goal-table/goal-table.
 import {PenaltiesTableComponent} from './navigation/match-view/penalties-table/penalties-table.component';
 import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +56,12 @@ import {HttpClientModule} from '@angular/common/http';
     MatTableModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatListModule,
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,11 +22,17 @@ export class PlayersViewComponent implements OnInit {
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
+  // todo: Sorting by player name does not work
+
+  selectedTeam = 'All teams';
+  teamNames: Set<string> = new Set();
+  players: StatPerPlayer[] = [];
+
   ngOnInit() {
     const matchDataPerPlayer: Map<string, StatPerPlayer> = this.extractPlayersFromMatches();
-    const playerStats: StatPerPlayer[] = this.convertMapToList(matchDataPerPlayer);
+    this.players = this.convertMapToList(matchDataPerPlayer);
 
-    this.dataSource = new MatTableDataSource(playerStats);
+    this.dataSource = new MatTableDataSource(this.players);
     this.dataSource.sort = this.sort;
   }
 
@@ -43,8 +49,8 @@ export class PlayersViewComponent implements OnInit {
   }
 
   private extractInfoFromPlayers(statPerPlayer: Map<string, StatPerPlayer>, players: MatchPlayer[], teamName: string) {
+    this.teamNames.add(teamName);
     players.forEach(player => {
-
       if (statPerPlayer.get(player.FullName)) {
         const existingStat = statPerPlayer.get(player.FullName);
         existingStat.matchesPlayed++;
@@ -92,5 +98,16 @@ export class PlayersViewComponent implements OnInit {
       }
       return 1;
     }
+  }
+
+  filterTeam(teamName: string) {
+    let selectedPlayers: StatPerPlayer[] = [];
+    if (teamName === 'All teams') {
+      selectedPlayers = this.players;
+    } else {
+      selectedPlayers = this.players.filter((player: StatPerPlayer) => player.teamName === teamName);
+    }
+    this.dataSource = new MatTableDataSource(selectedPlayers);
+    this.dataSource.sort = this.sort;
   }
 }
