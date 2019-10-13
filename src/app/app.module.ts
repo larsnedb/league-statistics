@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MainPageComponent} from './navigation/main-page/main-page.component';
-import {MatButtonModule, MatIconModule, MatMenuModule, MatTableModule, MatTabsModule} from '@angular/material';
+import {MatButtonModule, MatIconModule, MatMenuModule, MatSortModule, MatTableModule, MatTabsModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatchTopViewComponent} from './navigation/match-view/match-top-view/match-top-view.component';
 import {PlayersViewComponent} from './navigation/players-view/players-view.component';
@@ -43,7 +43,8 @@ import {HttpClientModule} from '@angular/common/http';
     FlexLayoutModule,
     MatTableModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

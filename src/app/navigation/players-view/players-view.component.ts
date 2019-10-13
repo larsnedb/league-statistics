@@ -1,9 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatchService} from '../../services/match.service';
 import {MatchParticipants} from '../../models/match-participants.model';
 import {MatchPlayer} from '../../models/match-player.model';
 import {StatPerPlayer} from '../../models/stat-per-player.model';
 import {MatchInfo} from '../../models/match-info.model';
+import {MatTableDataSource} from '@angular/material/table';
+import {MatSort} from '@angular/material';
 
 @Component({
   selector: 'app-players-view',
@@ -16,12 +18,16 @@ export class PlayersViewComponent implements OnInit {
   }
 
   columnsToDisplay = ['playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points'];
+  dataSource: any;
 
-  players: StatPerPlayer[] = [];
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   ngOnInit() {
     const matchDataPerPlayer: Map<string, StatPerPlayer> = this.extractPlayersFromMatches();
-    this.convertMapToList(matchDataPerPlayer);
+    const playerStats: StatPerPlayer[] = this.convertMapToList(matchDataPerPlayer);
+
+    this.dataSource = new MatTableDataSource(playerStats);
+    this.dataSource.sort = this.sort;
   }
 
   private extractPlayersFromMatches(): Map<string, StatPerPlayer> {
@@ -30,8 +36,8 @@ export class PlayersViewComponent implements OnInit {
       const participants: MatchParticipants = match.participants;
       const matchInfo: MatchInfo = match.info;
 
-      this.extractInfoFromPlayers(statPerPlayer, match.participants.HomePlayers, matchInfo.HomeTeamName);
-      this.extractInfoFromPlayers(statPerPlayer, match.participants.AwayPlayers, matchInfo.AwayTeamName);
+      this.extractInfoFromPlayers(statPerPlayer, participants.HomePlayers, matchInfo.HomeTeamName);
+      this.extractInfoFromPlayers(statPerPlayer, participants.AwayPlayers, matchInfo.AwayTeamName);
     });
     return statPerPlayer;
   }
@@ -59,8 +65,9 @@ export class PlayersViewComponent implements OnInit {
   }
 
   private convertMapToList(matchDataPerPlayer: Map<string, StatPerPlayer>) {
+    const players: StatPerPlayer[] = [];
     matchDataPerPlayer.forEach((value, key) => {
-      this.players.push({
+      players.push({
         name: key,
         teamName: value.teamName,
         points: value.points,
@@ -69,7 +76,7 @@ export class PlayersViewComponent implements OnInit {
         matchesPlayed: value.matchesPlayed
       });
     });
-    this.players.sort(((a, b) => this.comparePlayersSortByPoints(a, b)));
+    return players.sort(((a, b) => this.comparePlayersSortByPoints(a, b)));
   }
 
   private comparePlayersSortByPoints(a: StatPerPlayer, b: StatPerPlayer) {
