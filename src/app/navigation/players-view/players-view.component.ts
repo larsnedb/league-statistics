@@ -1,10 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {MatchService} from '../../services/match.service';
-import {MatchInfo} from '../../models/match-info.model';
 import {MatchParticipants} from '../../models/match-participants.model';
 import {MatchPlayer} from '../../models/match-player.model';
-import {MatchReport} from '../../models/match-report.model';
 import {StatPerPlayer} from '../../models/stat-per-player.model';
+import {MatchInfo} from '../../models/match-info.model';
 
 @Component({
   selector: 'app-players-view',
@@ -16,62 +15,54 @@ export class PlayersViewComponent implements OnInit {
   constructor(private matchService: MatchService) {
   }
 
-  matchInfo: MatchInfo;
-  participants: MatchParticipants;
-  columnsToDisplay = ['playername', 'matchesPlayed', 'goals', 'assists', 'points'];
-
-  homePlayers: MatchPlayer[];
-
-  matches: MatchReport[] = [];
-
-  statPerPlayer: Map<string, StatPerPlayer> = new Map<string, StatPerPlayer>();
+  columnsToDisplay = ['playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points'];
 
   players: StatPerPlayer[] = [];
 
   ngOnInit() {
-    this.matches.push(this.matchService.getMatch(1331202005));
-    this.matches.push(this.matchService.getMatch(1331202004));
-
-    this.matches.forEach(match => {
-      this.matchInfo = match.info;
-      this.participants = match.participants;
-
-      if (match.info.HomeTeamName === 'BMIL') {
-        this.homePlayers = match.participants.HomePlayers;
-      } else if (match.info.AwayTeamName === 'BMIL') {
-        this.homePlayers = match.participants.AwayPlayers;
-      }
-
-      this.homePlayers.forEach(player => {
-
-        if (this.statPerPlayer.get(player.FullName)) {
-          const existingStat = this.statPerPlayer.get(player.FullName);
-          existingStat.matchesPlayed++;
-          existingStat.points += player.Points;
-          existingStat.goals += player.Goals;
-          existingStat.assists += player.Assists;
-        } else {
-          const newStat: StatPerPlayer = {
-            matchesPlayed: 1,
-            points: player.Points,
-            goals: player.Goals,
-            assists: player.Assists
-          };
-          this.statPerPlayer.set(player.FullName, newStat);
-        }
-
-      });
-
-
-    });
-    this.convertMapToList();
-
+    const matchDataPerPlayer: Map<string, StatPerPlayer> = this.extractPlayersFromMatches();
+    this.convertMapToList(matchDataPerPlayer);
   }
 
-  private convertMapToList() {
-    this.statPerPlayer.forEach((value, key) => {
+  private extractPlayersFromMatches(): Map<string, StatPerPlayer> {
+    const statPerPlayer: Map<string, StatPerPlayer> = new Map<string, StatPerPlayer>();
+    this.matchService.getAllMatches().forEach(match => {
+      const participants: MatchParticipants = match.participants;
+      const matchInfo: MatchInfo = match.info;
+
+      this.extractInfoFromPlayers(statPerPlayer, match.participants.HomePlayers, matchInfo.HomeTeamName);
+      this.extractInfoFromPlayers(statPerPlayer, match.participants.AwayPlayers, matchInfo.AwayTeamName);
+    });
+    return statPerPlayer;
+  }
+
+  private extractInfoFromPlayers(statPerPlayer: Map<string, StatPerPlayer>, players: MatchPlayer[], teamName: string) {
+    players.forEach(player => {
+
+      if (statPerPlayer.get(player.FullName)) {
+        const existingStat = statPerPlayer.get(player.FullName);
+        existingStat.matchesPlayed++;
+        existingStat.points += player.Points;
+        existingStat.goals += player.Goals;
+        existingStat.assists += player.Assists;
+      } else {
+        const newStat: StatPerPlayer = {
+          teamName,
+          matchesPlayed: 1,
+          points: player.Points,
+          goals: player.Goals,
+          assists: player.Assists
+        };
+        statPerPlayer.set(player.FullName, newStat);
+      }
+    });
+  }
+
+  private convertMapToList(matchDataPerPlayer: Map<string, StatPerPlayer>) {
+    matchDataPerPlayer.forEach((value, key) => {
       this.players.push({
         name: key,
+        teamName: value.teamName,
         points: value.points,
         goals: value.goals,
         assists: value.assists,
