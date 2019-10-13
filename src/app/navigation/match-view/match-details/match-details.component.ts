@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {MatchService} from '../../services/match.service';
-import {Goal} from '../../models/goal.model';
-import {MatchPens} from '../../models/match-pens.model';
-import {MatchInfo} from '../../models/match-info.model';
-import {MatchReport} from '../../models/match-report.model';
+import {MatchService} from '../../../services/match.service';
+import {Goal} from '../../../models/goal.model';
+import {MatchPens} from '../../../models/match-pens.model';
+import {MatchInfo} from '../../../models/match-info.model';
+import {MatchReport} from '../../../models/match-report.model';
 
 @Component({
   selector: 'app-match-details',

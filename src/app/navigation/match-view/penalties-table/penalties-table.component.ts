@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MatchPens} from '../../models/match-pens.model';
-import {PenaltyObject} from '../../models/penalty-object.model';
+import {MatchPens} from '../../../models/match-pens.model';
+import {PenaltyObject} from '../../../models/penalty-object.model';
 
 @Component({
   selector: 'app-penalties-table',
