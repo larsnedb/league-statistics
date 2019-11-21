@@ -30,6 +30,7 @@ import {PenaltiesTableComponent} from './navigation/match-view/penalties-table/p
 import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {PlayerStatsComponent} from './navigation/player-stats/player-stats.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {FormsModule} from '@angular/forms';
     MatchDetailsComponent,
     GoalTableComponent,
     PenaltiesTableComponent,
-    DateNorwegianPipe
+    DateNorwegianPipe,
+    PlayerStatsComponent
   ],
   imports: [
     BrowserModule,
