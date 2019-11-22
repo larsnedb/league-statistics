@@ -16,7 +16,7 @@ export class MatchService {
   }
 
   matches: ComplexMatchReport[] = [
-    /*   {
+    {
          info: [
            {
              ActivityAreaId: 210993,
@@ -486,7 +486,7 @@ export class MatchService {
              AwayPenalty: '4. Thomas Camillo Christiansen, 2 min, Låsing av kølle'
            }]
          }],
-         Goals: [{
+      goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=581696',
@@ -1133,7 +1133,7 @@ export class MatchService {
              AwayPenalty: ''
            }]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=581680',
@@ -1626,7 +1626,7 @@ export class MatchService {
              AwayPenalty: '50. Robin Jensen Sandlie, 2 min, Slag'
            }, {AwayTime: '3 - 01:28', HomeTime: '', HomePenalty: '', AwayPenalty: '25. Samuel Tobias Merkelbach Borgnes, 2 min, Slag'}]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=695873',
@@ -2122,7 +2122,7 @@ export class MatchService {
              AwayPenalty: '44. Ole-Christian Bøhaugen, 2 min, Spill med høy kølle'
            }, {AwayTime: '', HomeTime: '3 - 17:53', HomePenalty: '16. Per Torsten Wångersjö, 2 min, Obstruksjon', AwayPenalty: ''}]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=580780',
@@ -2612,7 +2612,7 @@ export class MatchService {
              AwayPenalty: ''
            }, {AwayTime: '', HomeTime: '3 - 19:59', HomePenalty: '3. Helge Larsen, 2 min, Feil avstand', AwayPenalty: ''}]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=580780',
@@ -3191,7 +3191,7 @@ export class MatchService {
              ]
            }
          ],
-         Goals: [
+         goals: [
            {
              GoalsInOrder: [
                {
@@ -3748,7 +3748,7 @@ export class MatchService {
              AwayPenalty: '68. Henrik Svanæs, 2 min, Ulovlig dytt (mot vant eller målbur)'
            }]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=581696',
@@ -4272,7 +4272,7 @@ export class MatchService {
              AwayPenalty: '99. Per Jonas Christoffer Twilling Carlsson, 2 min, Gjentatte forseelser'
            }]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=695873',
@@ -4793,7 +4793,7 @@ export class MatchService {
              AwayPenalty: '22. Patrick Gerhard Fladby, 2 min, Hardt spill'
            }, {AwayTime: '1 - 00:19', HomeTime: '', HomePenalty: '', AwayPenalty: '22. Patrick Gerhard Fladby, 2 min, Hardt spill'}]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
@@ -5341,7 +5341,7 @@ export class MatchService {
              HomePenalty: '17. Jimmi Benteson Bruland, 2 min, Slag',
              AwayPenalty: ''
            }]
-         }], Goals: [{
+         }], goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
@@ -5948,7 +5948,7 @@ export class MatchService {
              AwayPenalty: '47. Kim Haldorsen Straumsnes, 2 min, Slag'
            }, {AwayTime: '2 - 16:05', HomeTime: '', HomePenalty: '', AwayPenalty: '6. Truls Eriksen, 2 min, Slag'}]
          }],
-         Goals: [{
+         goals: [{
            GoalsInOrder: [{
              IsPenaltyGoal: false,
              TeamUrl: 'PageOrgDetail.aspx?LinkId=581696',
@@ -6081,7 +6081,7 @@ export class MatchService {
              IsHomeGoal: true
            }]
          }]
-       }*/
+       }
   ];
 
   getAllMatches(): MatchReport[] {

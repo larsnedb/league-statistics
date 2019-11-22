@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Goal} from '../../models/goal.model';
+import {Goal} from '../../../models/goal.model';
+
 
 @Component({
   selector: 'app-goal-table',
