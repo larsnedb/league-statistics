@@ -659,183 +659,201 @@ export class MatchSmallerService {
     },
     {
       info: [{
-        ActivityAreaId: 214305,
+        ActivityAreaId: 210993,
         TournamentUrl: 'PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834',
         TournamentId: 383884,
         Referees: [{
-          PersonId: 4360125,
-          WebPartUrl: 'PagePersonDetail.aspx?LinkId=R2FrcHBCU2VIbU5uYmdzM3RMelR4QT090',
-          RefereeId: 223710,
-          Name: 'Dommer Morten Isnes'
+          PersonId: 5689960,
+          WebPartUrl: 'PagePersonDetail.aspx?LinkId=ekFWZGhFcS9lYnZxVDFzL3drYmtzdz090',
+          RefereeId: 300590,
+          Name: 'Dommer Espen Sjetne'
         }, {
-          PersonId: 7749152,
-          WebPartUrl: 'PagePersonDetail.aspx?LinkId=TzFIOEh2QU9wY2tLQ0R6cWxtVC8zQT090',
-          RefereeId: 228670,
-          Name: 'Dommer Andreas Femtegjeld Sletten'
+          PersonId: 7736233,
+          WebPartUrl: 'PagePersonDetail.aspx?LinkId=WXdscytTalhLc0xQcTl3QWhuUHdEQT090',
+          RefereeId: 300591,
+          Name: 'Dommer Torbjørn Tveit Alvestrand'
         }],
-        HomeTeamName: 'Ajer',
-        ActivityAreaName: 'Hedmarkshallen',
-        EventTeamInfo: 'Ajer - Øreåsen',
-        MatchDate: '2018-09-28T00:00:00',
-        ActivityAreaUrl: 'PageVenueActivityAreaDetail.aspx?LinkId=214305',
-        LinkId: 6861094,
-        Public: '45',
-        MatchNo: '1331202012',
-        MatchDateFormatted: '28.09.2018',
-        ResultsFormatted: '11-2 (5-1, 3-0, 3-1)',
+        HomeTeamName: 'Grei',
+        ActivityAreaName: 'Apalløkka 1',
+        EventTeamInfo: 'Grei - Lyn',
+        MatchDate: '2018-09-29T00:00:00',
+        ActivityAreaUrl: 'PageVenueActivityAreaDetail.aspx?LinkId=210993',
+        LinkId: 6861091,
+        Public: '25',
+        MatchNo: '1331202009',
+        MatchDateFormatted: '29.09.2018',
+        ResultsFormatted: '3-10 (0-3, 1-4, 2-3)',
         SeasonId: 200834,
         ActivityName: 'Innebandy',
         RoundUrl: 'PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=3',
-        PartialResult: ' 5-1, 3-0, 3-1',
-        Time: '19:30 - 21:15',
-        AwayTeamName: 'Øreåsen',
-        AwayTeamUrl: 'PageOrgDetail.aspx?LinkId=530254',
+        PartialResult: ' 0-3, 1-4, 2-3',
+        Time: '13:00 - 15:03',
+        AwayTeamName: 'Lyn',
+        AwayTeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
         RoundId: 3,
         HasMatchReportFile: true,
-        HomeTeamId: 495974,
-        HomeTeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-        MatchReportUrl: 'api/v1/match/GetMatchReport?matchId=6861094',
-        MatchId: 6861094,
+        HomeTeamId: 504455,
+        HomeTeamUrl: 'PageOrgDetail.aspx?LinkId=504455',
+        MatchReportUrl: 'api/v1/match/GetMatchReport?matchId=6861091',
+        MatchId: 6861091,
         RoundName: 'Runde 3',
-        AwayTeamId: 530254,
+        AwayTeamId: 581673,
         TournamentName: '1. div. østland menn - NBF',
-        EndResult: '11-2'
-      }],
-      participants: [{
+        EndResult: '3-10'
+      }], participants: [{
         AwayOwnGoals: [],
-        AwayGoalies: [{ShirtNo: '69', Goals: 8, Shots: 33, IsAlternateCaptain: false, FullName: 'Jonas Lillevik', IsCaptain: false}],
+        AwayGoalies: [{
+          ShirtNo: '1',
+          Goals: 3,
+          Shots: 18,
+          IsAlternateCaptain: false,
+          FullName: 'Kimmy Emil Christensen',
+          IsCaptain: false
+        }, {ShirtNo: '81', Goals: 0, Shots: 0, IsAlternateCaptain: false, FullName: 'Itrat Zishan', IsCaptain: false}],
         HomeGoalies: [{
           ShirtNo: '1',
-          Goals: 1,
-          Shots: 16,
+          Goals: 10,
+          Shots: 27,
           IsAlternateCaptain: false,
-          FullName: 'Ole-Kristian Bakker',
+          FullName: 'Kavinthan Gunaratnam',
           IsCaptain: false
-        }, {ShirtNo: '11', Goals: 1, Shots: 13, IsAlternateCaptain: false, FullName: 'Sverre Mikkelsen Olsbyengen', IsCaptain: false}],
+        }, {ShirtNo: '74', Goals: 0, Shots: 0, IsAlternateCaptain: false, FullName: 'Thomas-Andre Larsen', IsCaptain: false}],
         AwayPlayers: [{
-          ShirtNo: '7',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Atle Repstad Andersen',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '11',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Christer Olsen',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '13',
-          SquadIndividualCategoryId: 1,
-          Points: 1,
-          SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Daniel Gustav Baronowsky',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '15',
-          SquadIndividualCategoryId: 1,
-          Points: 2,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 2,
-          IsAlternateCaptain: false,
-          FullName: 'Niclas Antonsen',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '17',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Christian Olsen',
-          IsCaptain: true,
-          Penalties: 0
-        }, {
-          ShirtNo: '19',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Marcus Skillebekk Halvorsen',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '20',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Andreas Nicolai Baggerød',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '22',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1006,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Patrick Gerhard Fladby',
-          IsCaptain: false,
-          Penalties: 4
-        }, {
-          ShirtNo: '69',
+          ShirtNo: '1',
           SquadIndividualCategoryId: 1,
           Points: 0,
           SquadIndividualTypeId: 1011,
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Jonas Lillevik',
+          FullName: 'Kimmy Emil Christensen',
           IsCaptain: false,
           Penalties: 0
         }, {
-          ShirtNo: '77',
-          SquadIndividualCategoryId: 1,
-          Points: 1,
-          SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Stian Jensen',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '87',
+          ShirtNo: '4',
           SquadIndividualCategoryId: 1,
           Points: 0,
           SquadIndividualTypeId: 1006,
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Markus Jensen',
+          FullName: 'Julia Paulina Johannesson',
           IsCaptain: false,
           Penalties: 0
+        }, {
+          ShirtNo: '5',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Leif Robert Vincent Blom',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '7',
+          SquadIndividualCategoryId: 1,
+          Points: 3,
+          SquadIndividualTypeId: 1006,
+          Assists: 1,
+          Goals: 2,
+          IsAlternateCaptain: false,
+          FullName: 'Lars Petter Kandre',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '9',
+          SquadIndividualCategoryId: 1,
+          Points: 4,
+          SquadIndividualTypeId: 1006,
+          Assists: 3,
+          Goals: 1,
+          IsAlternateCaptain: false,
+          FullName: 'Simon Thomas Persson',
+          IsCaptain: false,
+          Penalties: 2
+        }, {
+          ShirtNo: '19',
+          SquadIndividualCategoryId: 1,
+          Points: 6,
+          SquadIndividualTypeId: 1006,
+          Assists: 3,
+          Goals: 3,
+          IsAlternateCaptain: false,
+          FullName: 'Nicklas Regin',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '23',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Kim Peter Åke Lönn',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '44',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Knut Røse',
+          IsCaptain: false,
+          Penalties: 2
+        }, {
+          ShirtNo: '66',
+          SquadIndividualCategoryId: 1,
+          Points: 2,
+          SquadIndividualTypeId: 1006,
+          Assists: 1,
+          Goals: 1,
+          IsAlternateCaptain: false,
+          FullName: 'Patrik Mikael Joakim Ohlsson',
+          IsCaptain: false,
+          Penalties: 2
+        }, {
+          ShirtNo: '76',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Per Hampus Johnsson',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '81',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1011,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Itrat Zishan',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '88',
+          SquadIndividualCategoryId: 1,
+          Points: 3,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 3,
+          IsAlternateCaptain: false,
+          FullName: 'Per Konrad Bergetoft-Karlsson',
+          IsCaptain: true,
+          Penalties: 0
         }],
-        HomeCoaches: [],
-        AwayCoaches: [{FullName: 'Espen Jakobsen'}],
+        // tslint:disable-next-line:max-line-length
+        HomeCoaches: [{FullName: 'Andreas Neofytou'}, {FullName: 'Claus Jørgen Kvasnes'}, {FullName: 'Steinar Engebretsen'}, {FullName: 'Stig Mjaasund Øyen'}],
+        AwayCoaches: [{FullName: 'Kenneth Lorentzen'}],
         HomeOwnGoals: [],
         HomePlayers: [{
           ShirtNo: '1',
@@ -845,97 +863,75 @@ export class MatchSmallerService {
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Ole-Kristian Bakker',
+          FullName: 'Kavinthan Gunaratnam',
           IsCaptain: false,
           Penalties: 0
         }, {
-          ShirtNo: '2',
-          SquadIndividualCategoryId: 1,
-          Points: 5,
-          SquadIndividualTypeId: 1006,
-          Assists: 2,
-          Goals: 3,
-          IsAlternateCaptain: false,
-          FullName: 'Andreas Ruud Heggelund',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '3',
-          SquadIndividualCategoryId: 1,
-          Points: 2,
-          SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 1,
-          IsAlternateCaptain: false,
-          FullName: 'Helge Larsen',
-          IsCaptain: true,
-          Penalties: 0
-        }, {
-          ShirtNo: '4',
-          SquadIndividualCategoryId: 1,
-          Points: 1,
-          SquadIndividualTypeId: null,
-          Assists: 1,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Martinus Toth Blindheim',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '7',
+          ShirtNo: '6',
           SquadIndividualCategoryId: 1,
           Points: 0,
           SquadIndividualTypeId: 1006,
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Even Tomter',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '10',
-          SquadIndividualCategoryId: 1,
-          Points: 2,
-          SquadIndividualTypeId: 1006,
-          Assists: 2,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Armin-Saentia Zahedi',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '11',
-          SquadIndividualCategoryId: 1,
-          Points: 0,
-          SquadIndividualTypeId: 1011,
-          Assists: 0,
-          Goals: 0,
-          IsAlternateCaptain: false,
-          FullName: 'Sverre Mikkelsen Olsbyengen',
+          FullName: 'Joakim Ikiza Amundsen',
           IsCaptain: false,
           Penalties: 0
         }, {
           ShirtNo: '14',
           SquadIndividualCategoryId: 1,
-          Points: 3,
+          Points: 1,
           SquadIndividualTypeId: 1006,
-          Assists: 2,
-          Goals: 1,
+          Assists: 1,
+          Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Terje Larsen',
+          FullName: 'Daniel Gundersen Engebretsen',
           IsCaptain: false,
           Penalties: 0
         }, {
-          ShirtNo: '24',
+          ShirtNo: '17',
           SquadIndividualCategoryId: 1,
           Points: 1,
           SquadIndividualTypeId: 1006,
           Assists: 0,
           Goals: 1,
           IsAlternateCaptain: false,
-          FullName: 'Adrian Aaen Skjærbekk',
+          FullName: 'Jimmi Benteson Bruland',
+          IsCaptain: false,
+          Penalties: 4
+        }, {
+          ShirtNo: '18',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Stian Teksdal',
+          IsCaptain: true,
+          Penalties: 20
+        }, {
+          ShirtNo: '19',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Lasse Kvasnes',
           IsCaptain: false,
           Penalties: 0
+        }, {
+          ShirtNo: '24',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Patrik Hammerås Marong',
+          IsCaptain: false,
+          Penalties: 2
         }, {
           ShirtNo: '25',
           SquadIndividualCategoryId: 1,
@@ -944,7 +940,18 @@ export class MatchSmallerService {
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Samuel Tobias Merkelbach Borgnes',
+          FullName: 'Lars Arne Rønningen',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '26',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Elias Samuel Pennström',
           IsCaptain: false,
           Penalties: 0
         }, {
@@ -955,196 +962,246 @@ export class MatchSmallerService {
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'William Borza',
+          FullName: 'Christoffer Ellingham',
           IsCaptain: false,
           Penalties: 0
         }, {
-          ShirtNo: '33',
-          SquadIndividualCategoryId: 1,
-          Points: 2,
-          SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 1,
-          IsAlternateCaptain: false,
-          FullName: 'Edmunds Eglitis',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '36',
-          SquadIndividualCategoryId: 1,
-          Points: 4,
-          SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 3,
-          IsAlternateCaptain: false,
-          FullName: 'Tobias Vermund',
-          IsCaptain: false,
-          Penalties: 0
-        }, {
-          ShirtNo: '42',
+          ShirtNo: '28',
           SquadIndividualCategoryId: 1,
           Points: 0,
           SquadIndividualTypeId: 1006,
           Assists: 0,
           Goals: 0,
           IsAlternateCaptain: false,
-          FullName: 'Tobias Nilssen Opedal',
+          FullName: 'Christoffer Maarud Lundgreen',
           IsCaptain: false,
           Penalties: 0
         }, {
-          ShirtNo: '50',
+          ShirtNo: '29',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Glenn Børmarken',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '44',
+          SquadIndividualCategoryId: 1,
+          Points: 1,
+          SquadIndividualTypeId: 1006,
+          Assists: 1,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Marko Johannes Länsman',
+          IsCaptain: false,
+          Penalties: 0
+        }, {
+          ShirtNo: '48',
           SquadIndividualCategoryId: 1,
           Points: 2,
           SquadIndividualTypeId: 1006,
-          Assists: 1,
-          Goals: 1,
+          Assists: 0,
+          Goals: 2,
           IsAlternateCaptain: false,
-          FullName: 'Robin Jensen Sandlie',
+          FullName: 'Eivind Hindrum',
           IsCaptain: false,
           Penalties: 0
+        }, {
+          ShirtNo: '74',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1011,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Thomas-Andre Larsen',
+          IsCaptain: false,
+          Penalties: 2
+        }, {
+          ShirtNo: '79',
+          SquadIndividualCategoryId: 1,
+          Points: 0,
+          SquadIndividualTypeId: 1006,
+          Assists: 0,
+          Goals: 0,
+          IsAlternateCaptain: false,
+          FullName: 'Jørgen Kvasnes',
+          IsCaptain: false,
+          Penalties: 2
         }]
-      }],
-      pens: [{
-        AwayTeam: 'Øreåsen',
-        HomeTeam: 'Ajer',
+      }], pens: [{
+        AwayTeam: 'Lyn',
+        HomeTeam: 'Grei',
         Penalties: [{
-          AwayTime: '1 - 00:19',
-          HomeTime: '',
-          HomePenalty: '',
-          AwayPenalty: '22. Patrick Gerhard Fladby, 2 min, Hardt spill'
-        }, {AwayTime: '1 - 00:19', HomeTime: '', HomePenalty: '', AwayPenalty: '22. Patrick Gerhard Fladby, 2 min, Hardt spill'}]
-      }],
-      goals: [{
+          AwayTime: '1 - 07:58',
+          HomeTime: '1 - 07:39',
+          HomePenalty: '18. Stian Teksdal, 2 min, Hardt spill',
+          AwayPenalty: '9. Simon Thomas Persson, 2 min, Slag'
+        }, {
+          AwayTime: '3 - 06:31',
+          HomeTime: '1 - 11:18',
+          HomePenalty: '79. Jørgen Kvasnes, 2 min, Slag',
+          AwayPenalty: '44. Knut Røse, 2 min, For mange spillere på banen'
+        }, {
+          AwayTime: '3 - 17:29',
+          HomeTime: '1 - 16:28',
+          HomePenalty: '24. Patrik Hammerås Marong, 2 min, Feil bytte',
+          AwayPenalty: '66. Patrik Mikael Joakim Ohlsson, 2 min, Feil bytte'
+        }, {
+          AwayTime: '',
+          HomeTime: '1 - 16:28',
+          HomePenalty: '17. Jimmi Benteson Bruland, 2 min, Spill med høy kølle',
+          AwayPenalty: ''
+        }, {AwayTime: '', HomeTime: '2 - 15:43', HomePenalty: '18. Stian Teksdal, 2 min, Hardt spill', AwayPenalty: ''}, {
+          AwayTime: '',
+          HomeTime: '3 - 01:00',
+          HomePenalty: '74. Thomas-Andre Larsen, 2 min, Protest',
+          AwayPenalty: ''
+        }, {AwayTime: '', HomeTime: '3 - 01:00', HomePenalty: '18. Stian Teksdal, 2 min, Hardt spill', AwayPenalty: ''}, {
+          AwayTime: '',
+          HomeTime: '3 - 01:00',
+          HomePenalty: '18. Stian Teksdal, 12 min, ',
+          AwayPenalty: ''
+        }, {AwayTime: '', HomeTime: '3 - 01:00', HomePenalty: '18. Stian Teksdal, 2 min, ', AwayPenalty: ''}, {
+          AwayTime: '',
+          HomeTime: '3 - 06:13',
+          HomePenalty: '17. Jimmi Benteson Bruland, 2 min, Slag',
+          AwayPenalty: ''
+        }]
+      }], goals: [{
         GoalsInOrder: [{
           IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '14. Terje Larsen',
-          TeamName: 'Ajer',
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '19. Nicklas Regin',
+          TeamName: 'Lyn Innebandy',
           IsOwnGoal: false,
-          PartialResult: '1-0',
-          Scorer: '36. Tobias Vermund',
-          Time: '1 - 02:24',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '36. Tobias Vermund',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '2-0',
-          Scorer: '2. Andreas Ruud Heggelund',
-          Time: '1 - 06:57',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=530254',
-          Assist: '13. Daniel Gustav Baronowsky',
-          TeamName: 'Øreåsen',
-          IsOwnGoal: false,
-          PartialResult: '2-1',
-          Scorer: '15. Niclas Antonsen',
-          Time: '1 - 10:08',
+          PartialResult: '0-1',
+          Scorer: '9. Simon Thomas Persson',
+          Time: '1 - 17:25',
           IsHomeGoal: false
         }, {
           IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '10. Armin-Saentia Zahedi',
-          TeamName: 'Ajer',
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '19. Nicklas Regin',
+          TeamName: 'Lyn Innebandy',
           IsOwnGoal: false,
-          PartialResult: '3-1',
-          Scorer: '33. Edmunds Eglitis',
-          Time: '1 - 14:40',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '14. Terje Larsen',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '4-1',
-          Scorer: '3. Helge Larsen',
-          Time: '1 - 16:50',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '10. Armin-Saentia Zahedi',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '5-1',
-          Scorer: '36. Tobias Vermund',
-          Time: '1 - 17:21',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '3. Helge Larsen',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '6-1',
-          Scorer: '14. Terje Larsen',
-          Time: '2 - 07:41',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '50. Robin Jensen Sandlie',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '7-1',
-          Scorer: '2. Andreas Ruud Heggelund',
-          Time: '2 - 13:04',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '2. Andreas Ruud Heggelund',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '8-1',
-          Scorer: '50. Robin Jensen Sandlie',
-          Time: '2 - 18:35',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '4. Martinus Toth Blindheim',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '9-1',
-          Scorer: '36. Tobias Vermund',
-          Time: '3 - 08:09',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '33. Edmunds Eglitis',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '10-1',
-          Scorer: '2. Andreas Ruud Heggelund',
-          Time: '3 - 09:54',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=495974',
-          Assist: '2. Andreas Ruud Heggelund',
-          TeamName: 'Ajer',
-          IsOwnGoal: false,
-          PartialResult: '11-1',
-          Scorer: '24. Adrian Aaen Skjærbekk',
-          Time: '3 - 14:10',
-          IsHomeGoal: true
-        }, {
-          IsPenaltyGoal: false,
-          TeamUrl: 'PageOrgDetail.aspx?LinkId=530254',
-          Assist: '77. Stian Jensen',
-          TeamName: 'Øreåsen',
-          IsOwnGoal: false,
-          PartialResult: '11-2',
-          Scorer: '15. Niclas Antonsen',
-          Time: '3 - 19:22',
+          PartialResult: '0-2',
+          Scorer: '88. Per Konrad Bergetoft-Karlsson',
+          Time: '1 - 17:47',
           IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '0-3',
+          Scorer: '19. Nicklas Regin',
+          Time: '1 - 17:53',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '0-4',
+          Scorer: '66. Patrik Mikael Joakim Ohlsson',
+          Time: '2 - 04:10',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=504455',
+          Assist: '14. Daniel Gundersen Engebretsen',
+          TeamName: 'Grei',
+          IsOwnGoal: false,
+          PartialResult: '1-4',
+          Scorer: '17. Jimmi Benteson Bruland',
+          Time: '2 - 09:51',
+          IsHomeGoal: true
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '7. Lars Petter Kandre',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '1-5',
+          Scorer: '19. Nicklas Regin',
+          Time: '2 - 10:23',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '19. Nicklas Regin',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '1-6',
+          Scorer: '88. Per Konrad Bergetoft-Karlsson',
+          Time: '2 - 17:24',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '9. Simon Thomas Persson',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '1-7',
+          Scorer: '7. Lars Petter Kandre',
+          Time: '2 - 19:00',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '9. Simon Thomas Persson',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '1-8',
+          Scorer: '88. Per Konrad Bergetoft-Karlsson',
+          Time: '3 - 01:15',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '9. Simon Thomas Persson',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '1-9',
+          Scorer: '7. Lars Petter Kandre',
+          Time: '3 - 02:13',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=504455',
+          Assist: '',
+          TeamName: 'Grei',
+          IsOwnGoal: false,
+          PartialResult: '2-9',
+          Scorer: '48. Eivind Hindrum',
+          Time: '3 - 06:48',
+          IsHomeGoal: true
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=581673',
+          Assist: '66. Patrik Mikael Joakim Ohlsson',
+          TeamName: 'Lyn Innebandy',
+          IsOwnGoal: false,
+          PartialResult: '2-10',
+          Scorer: '19. Nicklas Regin',
+          Time: '3 - 09:05',
+          IsHomeGoal: false
+        }, {
+          IsPenaltyGoal: false,
+          TeamUrl: 'PageOrgDetail.aspx?LinkId=504455',
+          Assist: '44. Marko Johannes Länsman',
+          TeamName: 'Grei',
+          IsOwnGoal: false,
+          PartialResult: '3-10',
+          Scorer: '48. Eivind Hindrum',
+          Time: '3 - 14:51',
+          IsHomeGoal: true
         }]
       }]
     }
@@ -1158,14 +1215,6 @@ export class MatchSmallerService {
     return simples;
   }
 
-  getGoalsFromMatch(matchReport: MatchReport): Goal[] {
-    const goals: Goal[] = [];
-    matchReport.Goals.GoalsInOrder.forEach(goal => {
-      goals.push(goal);
-    });
-    return goals;
-  }
-
   groupGoalsPerMatch(matchReports: MatchReport[]): Map<number, Goal[]> {
     let counter = 1;
     const goalsPerMatch: Map<number, Goal[]> = new Map();
@@ -1177,8 +1226,14 @@ export class MatchSmallerService {
       console.log('Match number: ' + key);
       console.log('Goals: ' + JSON.stringify(value));
     });
-
     return goalsPerMatch;
   }
-}
 
+  getGoalsFromMatch(matchReport: MatchReport): Goal[] {
+    const goals: Goal[] = [];
+    matchReport.Goals.GoalsInOrder.forEach(goal => {
+      goals.push(goal);
+    });
+    return goals;
+  }
+}

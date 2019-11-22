@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {MatchReport} from '../../models/match-report.model';
-import {MatchPlayer} from '../../models/match-player.model';
+import {MatchData} from './matchData.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +10,13 @@ export class ExtractPlayerInfoService {
   constructor() {
   }
 
-  getPlayersPerTeamName(matchReport: MatchReport): Map<string, MatchPlayer[]> {
-    const playersPerTeam: Map<string, MatchPlayer[]> = new Map();
-    playersPerTeam.set(matchReport.info.HomeTeamName, matchReport.participants.HomePlayers);
-    playersPerTeam.set(matchReport.info.AwayTeamName, matchReport.participants.AwayPlayers);
-    return playersPerTeam;
+  getPlayersPerTeamName(matchReport: MatchReport): MatchData {
+    return {
+      homeTeam: matchReport.info.HomeTeamName,
+      homePlayers: matchReport.participants.HomePlayers,
+      awayTeam: matchReport.info.AwayTeamName,
+      awayPlayers: matchReport.participants.AwayPlayers
+    };
   }
 
 }

@@ -12,6 +12,9 @@ import {MatchPlayer} from '../../models/match-player.model';
 })
 export class PlayerStatsComponent implements OnInit {
 
+  // todo Now groups all matches per player. Need to filter by team data.
+  // Only fetch data for specific team name and present nicely in a table
+
   pointsPerPlayer: Map<string, MatchPlayer[]>;
 
   constructor(private matchService: MatchService,
@@ -20,16 +23,17 @@ export class PlayerStatsComponent implements OnInit {
   }
 
   ngOnInit() {
-    const allMatches: MatchReport[] = this.matchesPerPlayerService.getAllMatches();
-    const selectedMatch = allMatches[0];
+    const allMatches: MatchReport[] = this.matchService.getAllMatches();
+    const pointsPerPlayer: Map<string, MatchPlayer[]> = new Map();
+    allMatches.forEach(match => {
+      const matchData = this.playerInfoService.getPlayersPerTeamName(match);
 
-    const matches = this.playerInfoService.getPlayersPerTeamName(selectedMatch);
-    const homeData = matches.values().next();
-    this.pointsPerPlayer = this.groupPointsByPlayer(homeData.value);
+      this.pointsPerPlayer = this.groupPointsByPlayer(pointsPerPlayer, matchData.homePlayers);
+      this.pointsPerPlayer = this.groupPointsByPlayer(pointsPerPlayer, matchData.awayPlayers);
+    });
   }
 
-  private groupPointsByPlayer(players: MatchPlayer[]): Map<string, MatchPlayer[]> {
-    const pointsPerPlayer: Map<string, MatchPlayer[]> = new Map();
+  private groupPointsByPlayer(pointsPerPlayer: Map<string, MatchPlayer[]>, players: MatchPlayer[]): Map<string, MatchPlayer[]> {
     players.forEach(player => {
       if (pointsPerPlayer.get(player.FullName)) {
         const existingPlayer = pointsPerPlayer.get(player.FullName);
