@@ -1,10 +1,10 @@
 <p>player-stats works!</p>
 
 <ul>
-  <li *ngFor="let match of matches | keyvalue">
+  <div *ngFor="let match of pointsPerPlayer | keyvalue">
     {{match.key}}
     <div *ngFor="let player of match.value">
-      <p>{{player.FullName}}: did {{player.Points}} point(s) ({{player.Goals}} + {{player.Assists}})</p>
+      <li>{{player.Points}} point(s) ({{player.Goals}} + {{player.Assists}})</li>
     </div>
-  </li>
+  </div>
 </ul>

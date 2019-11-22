@@ -12,7 +12,7 @@ import {MatchPlayer} from '../../models/match-player.model';
 })
 export class PlayerStatsComponent implements OnInit {
 
-  matches: Map<string, MatchPlayer[]>;
+  pointsPerPlayer: Map<string, MatchPlayer[]>;
 
   constructor(private matchService: MatchService,
               private matchesPerPlayerService: MatchSmallerService,
@@ -23,7 +23,22 @@ export class PlayerStatsComponent implements OnInit {
     const allMatches: MatchReport[] = this.matchesPerPlayerService.getAllMatches();
     const selectedMatch = allMatches[0];
 
-    this.matches = this.playerInfoService.getPlayersPerTeamName(selectedMatch);
+    const matches = this.playerInfoService.getPlayersPerTeamName(selectedMatch);
+    const homeData = matches.values().next();
+    this.pointsPerPlayer = this.groupPointsByPlayer(homeData.value);
+  }
+
+  private groupPointsByPlayer(players: MatchPlayer[]): Map<string, MatchPlayer[]> {
+    const pointsPerPlayer: Map<string, MatchPlayer[]> = new Map();
+    players.forEach(player => {
+      if (pointsPerPlayer.get(player.FullName)) {
+        const existingPlayer = pointsPerPlayer.get(player.FullName);
+        existingPlayer.push(player);
+      } else {
+        pointsPerPlayer.set(player.FullName, [player]);
+      }
+    });
+    return pointsPerPlayer;
   }
 
 }
