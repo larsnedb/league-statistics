@@ -6099,11 +6099,6 @@ export class MatchService {
     return MatchUtils.simplifyMatchObject(complexMatchReport);
   }
 
-  getMatchesSummaryPerTeam(): Map<string, MatchForTeam[]> {
-    const allMatchesList: MatchForTeam[] = this.getAllMatchesList();
-    return this.getMatchesPerTeam(allMatchesList);
-  }
-
   getLeagueTableSummaryPerTeam(): LeagueEntry[] {
     const allMatchesList: MatchForTeam[] = this.getAllMatchesList();
 

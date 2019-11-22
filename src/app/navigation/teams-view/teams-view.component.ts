@@ -18,7 +18,7 @@ export class TeamsViewComponent implements OnInit {
     'goalsAgainst', 'goalDiff', 'points'];
 
   ngOnInit() {
-    this.matches = this.matchService.getSummaryPerTeam()
+    this.matches = this.matchService.getLeagueTableSummaryPerTeam()
       .sort((a, b) =>
         (a.stats.points < b.stats.points)
           ? 1 : (this.getGoalDifference(a) < this.getGoalDifference(b)) ? 1 : -1);
