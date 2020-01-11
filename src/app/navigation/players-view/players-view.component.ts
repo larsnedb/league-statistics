@@ -54,16 +54,16 @@ export class PlayersViewComponent implements OnInit {
       if (statPerPlayer.get(player.FullName)) {
         const existingStat = statPerPlayer.get(player.FullName);
         existingStat.matchesPlayed++;
-        existingStat.points += player.Points;
-        existingStat.goals += player.Goals;
-        existingStat.assists += player.Assists;
+        existingStat.points.push(player.Points);
+        existingStat.goals.push(player.Goals);
+        existingStat.assists.push(player.Assists);
       } else {
         const newStat: StatPerPlayer = {
           teamName,
           matchesPlayed: 1,
-          points: player.Points,
-          goals: player.Goals,
-          assists: player.Assists
+          points: [player.Points],
+          goals: [player.Goals],
+          assists: [player.Assists]
         };
         statPerPlayer.set(player.FullName, newStat);
       }
@@ -109,5 +109,9 @@ export class PlayersViewComponent implements OnInit {
     }
     this.dataSource = new MatTableDataSource(selectedPlayers);
     this.dataSource.sort = this.sort;
+  }
+
+  sumValues(values: number[]) {
+    return values.reduce((a, b) => a + b, 0);
   }
 }
