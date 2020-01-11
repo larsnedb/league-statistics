@@ -25,7 +25,7 @@ export class StatisticsViewComponent implements OnInit {
     return {
       info: matchReport.info[0],
       pens: matchReport.pens[0],
-      Goals: matchReport.goals[0],
+      goals: matchReport.goals[0],
       participants: matchReport.participants[0]
     };
   }

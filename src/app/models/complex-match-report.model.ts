@@ -7,5 +7,5 @@ export interface ComplexMatchReport {
   info: MatchInfo[];
   participants: MatchParticipants[];
   pens: MatchPens[];
-  Goals: GoalsInOrder[];
+  goals: GoalsInOrder[];
 }
