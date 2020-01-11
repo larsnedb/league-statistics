@@ -19,7 +19,7 @@ import {
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatchTopViewComponent} from './navigation/match-view/match-top-view/match-top-view.component';
-import {PlayersViewComponent} from './navigation/players-view/players-view.component';
+import {PlayersViewComponent} from './navigation/players-view/player-overview/players-view.component';
 import {StandingsComponent} from './navigation/teams-view/standings.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
 import {MatchDetailsComponent} from './navigation/match-view/match-details/match-details.component';
@@ -30,6 +30,7 @@ import {PenaltiesTableComponent} from './navigation/match-view/penalties-table/p
 import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { PlayerGraphComponent } from './navigation/players-view/player-graph/player-graph.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {FormsModule} from '@angular/forms';
     MatchDetailsComponent,
     GoalTableComponent,
     PenaltiesTableComponent,
-    DateNorwegianPipe
+    DateNorwegianPipe,
+    PlayerGraphComponent
   ],
   imports: [
     BrowserModule,

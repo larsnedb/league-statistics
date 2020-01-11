@@ -1,9 +1,9 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatchService} from '../../services/match.service';
-import {MatchParticipants} from '../../models/match-participants.model';
-import {MatchPlayer} from '../../models/match-player.model';
-import {StatPerPlayer} from '../../models/stat-per-player.model';
-import {MatchInfo} from '../../models/match-info.model';
+import {MatchService} from '../../../services/match.service';
+import {MatchParticipants} from '../../../models/match-participants.model';
+import {MatchPlayer} from '../../../models/match-player.model';
+import {StatPerPlayer} from '../../../models/stat-per-player.model';
+import {MatchInfo} from '../../../models/match-info.model';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatSort} from '@angular/material';
 

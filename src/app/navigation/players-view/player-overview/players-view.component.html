@@ -45,6 +45,6 @@
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-  <tr mat-row *matRowDef="let player; columns: columnsToDisplay;"></tr>
+  <tr mat-row *matRowDef="let player; columns: columnsToDisplay;" [routerLink]="[player.fullName, player]"></tr>
 
 </table>
