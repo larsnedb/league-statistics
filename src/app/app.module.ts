@@ -20,7 +20,7 @@ import {
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatchTopViewComponent} from './navigation/match-view/match-top-view/match-top-view.component';
 import {PlayersViewComponent} from './navigation/players-view/players-view.component';
-import {TeamsViewComponent} from './navigation/teams-view/teams-view.component';
+import {StandingsComponent} from './navigation/teams-view/standings.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
 import {MatchDetailsComponent} from './navigation/match-view/match-details/match-details.component';
 import {RouterModule} from '@angular/router';
@@ -37,7 +37,7 @@ import {FormsModule} from '@angular/forms';
     MainPageComponent,
     MatchTopViewComponent,
     PlayersViewComponent,
-    TeamsViewComponent,
+    StandingsComponent,
     StatisticsViewComponent,
     MatchDetailsComponent,
     GoalTableComponent,

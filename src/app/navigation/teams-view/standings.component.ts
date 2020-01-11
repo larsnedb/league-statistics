@@ -4,10 +4,10 @@ import {LeagueEntry} from '../../models/league-entry.model';
 
 @Component({
   selector: 'app-teams-view',
-  templateUrl: './teams-view.component.html',
-  styleUrls: ['./teams-view.component.css']
+  templateUrl: './standings.component.html',
+  styleUrls: ['./standings.component.css']
 })
-export class TeamsViewComponent implements OnInit {
+export class StandingsComponent implements OnInit {
 
 
   constructor(private matchService: MatchService) {
