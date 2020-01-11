@@ -86,13 +86,19 @@ export class PlayersViewComponent implements OnInit {
   }
 
   private comparePlayersSortByPoints(a: StatPerPlayer, b: StatPerPlayer) {
-    if (a.points > b.points) {
+    const aPoints = this.sumValues(a.points);
+    const bPoints = this.sumValues(b.points);
+    if (aPoints > bPoints) {
       return -1;
-    } else if (a.points === b.points) {
-      if (a.goals > b.goals) {
+    } else if (aPoints === bPoints) {
+      const aGoals = this.sumValues(a.goals);
+      const bGoals = this.sumValues(b.goals);
+      if (aGoals > bGoals) {
         return -1;
-      } else if (a.goals === b.goals) {
-        if (a.assists > b.assists) {
+      } else if (aGoals === bGoals) {
+        const aAssists = this.sumValues(a.assists);
+        const bAssists = this.sumValues(b.assists);
+        if (aAssists > bAssists) {
           return -1;
         }
       }
