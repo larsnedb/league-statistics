@@ -1,3 +1,9 @@
-<p>player-graph-component works!</p>
+<h2>Stats for {{player.name}}</h2>
+
+<p>Matches played: {{player.matchesPlayed}}</p>
+<p>Total points: {{this.sumValues(player.points)}}</p>
+<p>Points per game: {{this.getPointsAverage(player.points, player.matchesPlayed)}}</p>
+<p>Number of goals: {{this.sumValues(player.goals)}}</p>
+<p>Number of assists: {{this.sumValues(player.assists)}}</p>
 
 {{player | json}}
