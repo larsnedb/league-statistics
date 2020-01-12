@@ -28,61 +28,28 @@ export class LineChartComponent implements OnInit {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
   };
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     this.multi = [
       {
         name: 'Points',
-        series: [
-          {
-            name: 1,
-            value: 5
-          },
-          {
-            name: 2,
-            value: 3
-          },
-          {
-            name: 3,
-            value: 4
-          }
-        ]
+        series: this.mapToDataSeries(this.player.points)
       },
       {
         name: 'Goals',
-        series: [
-          {
-            name: 1,
-            value: 1
-          },
-          {
-            name: 2,
-            value: 1
-          },
-          {
-            name: 3,
-            value: 3
-          }
-        ]
+        series: this.mapToDataSeries(this.player.goals)
       },
       {
         name: 'Assists',
-        series: [
-          {
-            name: 1,
-            value: 4
-          },
-          {
-            name: 2,
-            value: 2
-          },
-          {
-            name: 3,
-            value: 1
-          }
-        ]
+        series: this.mapToDataSeries(this.player.assists)
       }];
   }
 
+  mapToDataSeries(values: number[]) {
+    const objects = [];
+    values.forEach((value, index) => objects.push({name: index + 1, value}));
+    return objects;
+  }
 }
