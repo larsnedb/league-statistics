@@ -31,6 +31,8 @@ import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { PlayerGraphComponent } from './navigation/players-view/player-graph/player-graph.component';
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import { LineChartComponent } from './navigation/utils/line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -44,27 +46,29 @@ import { PlayerGraphComponent } from './navigation/players-view/player-graph/pla
     GoalTableComponent,
     PenaltiesTableComponent,
     DateNorwegianPipe,
-    PlayerGraphComponent
+    PlayerGraphComponent,
+    LineChartComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatTabsModule,
-    FlexLayoutModule,
-    MatTableModule,
-    HttpClientModule,
-    RouterModule.forRoot(appRoutes),
-    MatSortModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatListModule,
-    MatDialogModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        MatIconModule,
+        MatButtonModule,
+        MatTabsModule,
+        FlexLayoutModule,
+        MatTableModule,
+        HttpClientModule,
+        RouterModule.forRoot(appRoutes),
+        MatSortModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatListModule,
+        MatDialogModule,
+        FormsModule,
+        NgxChartsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

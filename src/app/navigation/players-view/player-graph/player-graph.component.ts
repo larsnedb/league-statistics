@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {StatPerPlayer} from '../../../models/stat-per-player.model';
 
 @Component({
   selector: 'app-player-graph-component',
@@ -7,7 +8,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./player-graph.component.css']
 })
 export class PlayerGraphComponent implements OnInit {
-  player: { name: string, team: string, points: number[], goals: number[], assists: number[], matchesPlayed: number };
+  player: StatPerPlayer;
 
   constructor(private route: ActivatedRoute) {
   }
@@ -15,7 +16,7 @@ export class PlayerGraphComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       const name = params['name'];
-      const team = params['teamName'];
+      const teamName = params['teamName'];
       const points = this.parseNumberArray(params['points']);
       const goals = this.parseNumberArray(params['goals']);
       const assists = this.parseNumberArray(params['assists']);
@@ -23,7 +24,7 @@ export class PlayerGraphComponent implements OnInit {
 
       this.player = {
         name,
-        team,
+        teamName,
         points,
         goals,
         assists,
