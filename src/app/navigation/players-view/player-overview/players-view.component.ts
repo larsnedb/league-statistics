@@ -82,10 +82,10 @@ export class PlayersViewComponent implements OnInit {
         matchesPlayed: value.matchesPlayed
       });
     });
-    return players.sort(((a, b) => this.comparePlayersSortByPoints(a, b)));
+    return players.sort(((a, b) => this.comparePlayersSortForLeaderboard(a, b)));
   }
 
-  private comparePlayersSortByPoints(a: StatPerPlayer, b: StatPerPlayer) {
+  private comparePlayersSortForLeaderboard(a: StatPerPlayer, b: StatPerPlayer) {
     const aPoints = this.sumValues(a.points);
     const bPoints = this.sumValues(b.points);
     if (aPoints > bPoints) {
@@ -100,7 +100,10 @@ export class PlayersViewComponent implements OnInit {
         const bAssists = this.sumValues(b.assists);
         if (aAssists > bAssists) {
           return -1;
-        }
+        } else if (aAssists === bAssists) {
+          if (a.matchesPlayed < b.matchesPlayed) {
+            return -1;
+          }}
       }
       return 1;
     }
