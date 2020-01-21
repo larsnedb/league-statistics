@@ -9,6 +9,7 @@ import {StatPerPlayer} from '../../../models/stat-per-player.model';
 })
 export class PlayerGraphComponent implements OnInit {
   player: StatPerPlayer;
+  accumulatedPlayer: StatPerPlayer;
 
   constructor(private route: ActivatedRoute) {
   }
@@ -23,6 +24,16 @@ export class PlayerGraphComponent implements OnInit {
       const matchesPlayed = +params['matchesPlayed'];
 
       this.player = {
+        name,
+        teamName,
+        points,
+        goals,
+        assists,
+        matchesPlayed
+      };
+
+      // TODO larsne: accumulate goals, assists and points
+      this.accumulatedPlayer = {
         name,
         teamName,
         points,
@@ -48,4 +59,9 @@ export class PlayerGraphComponent implements OnInit {
       ? (totalPoints / matchesPlayed).toFixed(2)
       : 0;
   }
+
+  // getAccumulatedList(values: number[]) {
+  //   values.reduce((previousValue, currentValue, currentIndex) => )
+  // }
+  // myarray.reduce(function(a,b,i) { return new_array[i] = a+b; },0);
 }
