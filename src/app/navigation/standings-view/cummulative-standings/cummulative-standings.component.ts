@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {LeagueEntry} from '../../../models/league-entry.model';
+import {DataSeriesUtil} from '../../utils/data-series.util';
 
 @Component({
   selector: 'app-cummulative-standings',
@@ -7,11 +9,19 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CummulativeStandingsComponent implements OnInit {
 
-  @Input() matchData;
+  @Input() matchData: LeagueEntry[];
+  perMatchTitle = 'Cummulative standings';
+  data = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.matchData.forEach(leagueEntry => {
+      this.data.push({
+        name: leagueEntry.teamName,
+        series: DataSeriesUtil.mapToCummulativeDataSeries(leagueEntry.stats.points)
+      });
+    });
   }
 
 }

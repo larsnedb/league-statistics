@@ -24,7 +24,17 @@ export class LineChartComponent implements OnInit {
 
 
   colorScheme = {
-    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
+    domain: [
+      '#5AA454',
+      '#E44D25',
+      '#CFC0BB',
+      '#7aa3e5',
+      '#a8385d',
+      '#aae3f5',
+      '#000000'
+      // todo larsne: Add more colors here. Should maybe be parameterized for different usages?
+      // Or can this component define a lot of colors, and it will only use the one it needs.
+    ]
   };
 
   constructor() {
