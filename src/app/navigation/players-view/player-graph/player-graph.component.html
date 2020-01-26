@@ -8,5 +8,5 @@
 
 {{player | json}}
 
-<app-line-chart [player]="player" [title]="perMatchTitle"></app-line-chart>
-<app-line-chart [player]="accumulatedPlayer" [title]="accumulatedTitle"></app-line-chart>
+<app-line-chart [title]="perMatchTitle" [dataSeries]="data"></app-line-chart>
+<app-line-chart [title]="accumulatedTitle" [dataSeries]="accData"></app-line-chart>

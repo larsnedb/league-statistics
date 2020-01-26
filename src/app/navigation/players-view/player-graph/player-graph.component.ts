@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {StatPerPlayer} from '../../../models/stat-per-player.model';
+import {LineChartUtil} from '../../utils/line-chart.util';
 
 @Component({
   selector: 'app-player-graph-component',
@@ -12,6 +13,8 @@ export class PlayerGraphComponent implements OnInit {
   accumulatedPlayer: StatPerPlayer;
   perMatchTitle = 'Stats per match';
   accumulatedTitle = 'Accumulated stats';
+  data: any;
+  accData: any;
 
   constructor(private route: ActivatedRoute) {
   }
@@ -43,6 +46,33 @@ export class PlayerGraphComponent implements OnInit {
         matchesPlayed
       };
     });
+    this.data = [
+      {
+        name: 'Points',
+        series: LineChartUtil.mapToDataSeries(this.player.points)
+      },
+      {
+        name: 'Goals',
+        series: LineChartUtil.mapToDataSeries(this.player.goals)
+      },
+      {
+        name: 'Assists',
+        series: LineChartUtil.mapToDataSeries(this.player.assists)
+      }];
+
+    this.accData = [
+      {
+        name: 'Points',
+        series: LineChartUtil.mapToDataSeries(this.getAccumulatedList(this.player.points))
+      },
+      {
+        name: 'Goals',
+        series: LineChartUtil.mapToDataSeries(this.getAccumulatedList(this.player.goals))
+      },
+      {
+        name: 'Assists',
+        series: LineChartUtil.mapToDataSeries(this.getAccumulatedList(this.player.assists))
+      }];
   }
 
   parseNumberArray(values: string): number[] {

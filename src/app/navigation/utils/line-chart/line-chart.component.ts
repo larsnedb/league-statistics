@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {StatPerPlayer} from '../../../models/stat-per-player.model';
 
 @Component({
   selector: 'app-line-chart',
@@ -8,10 +7,8 @@ import {StatPerPlayer} from '../../../models/stat-per-player.model';
 })
 export class LineChartComponent implements OnInit {
 
-  @Input() player: StatPerPlayer;
   @Input() title: string;
-
-  multi: any[];
+  @Input() dataSeries: any;
 
   view: any[] = [700, 300];
 
@@ -34,25 +31,6 @@ export class LineChartComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.multi = [
-      {
-        name: 'Points',
-        series: this.mapToDataSeries(this.player.points)
-      },
-      {
-        name: 'Goals',
-        series: this.mapToDataSeries(this.player.goals)
-      },
-      {
-        name: 'Assists',
-        series: this.mapToDataSeries(this.player.assists)
-      }];
-  }
-
-  mapToDataSeries(values: number[]) {
-    const objects = [];
-    values.forEach((value, index) => objects.push({name: index + 1, value}));
-    return objects;
   }
 
   displayOnlyIntegers(value: number) {
