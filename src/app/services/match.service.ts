@@ -6122,13 +6122,13 @@ export class MatchService {
       entry.forEach(matchEntry => {
 
         const matchResult: MatchResult = this.getPointsForMatch(matchEntry);
-        stats.points += matchResult;
+        stats.points.push(matchResult);
         stats.victories += matchEntry.goalsFor > matchEntry.goalsAgainst ? 1 : 0;
         stats.penaltyVictories += this.getPenaltyVictory(matchResult);
         stats.losses += matchEntry.goalsFor < matchEntry.goalsAgainst ? 1 : 0;
         stats.lossPenalties += this.getPenaltyLoss(matchResult);
-        stats.goalsFor += matchEntry.goalsFor;
-        stats.goalsAgainst += matchEntry.goalsAgainst;
+        stats.goalsFor.push(matchEntry.goalsFor);
+        stats.goalsAgainst.push(matchEntry.goalsAgainst);
         stats.matchesPlayed++;
       });
       leagueTable.push({
@@ -6161,14 +6161,14 @@ export class MatchService {
 
   private createEmptyStats(): LeagueTeam {
     return {
-      goalsFor: 0,
-      goalsAgainst: 0,
+      goalsFor: [],
+      goalsAgainst: [],
       matchesPlayed: 0,
       lossPenalties: 0,
       losses: 0,
       penaltyVictories: 0,
       victories: 0,
-      points: 0
+      points: []
     };
   }
 

@@ -4,7 +4,7 @@ export interface LeagueTeam {
   penaltyVictories?: number;
   lossPenalties?: number;
   losses?: number;
-  goalsFor?: number;
-  goalsAgainst?: number;
-  points?: number;
+  goalsFor?: number[];
+  goalsAgainst?: number[];
+  points?: number[];
 }
