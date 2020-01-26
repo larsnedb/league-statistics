@@ -36,9 +36,9 @@ export class PlayerGraphComponent implements OnInit {
       this.accumulatedPlayer = {
         name,
         teamName,
-        points,
-        goals,
-        assists,
+        points: this.getAccumulatedList(points),
+        goals: this.getAccumulatedList(goals),
+        assists: this.getAccumulatedList(assists),
         matchesPlayed
       };
     });
@@ -60,8 +60,9 @@ export class PlayerGraphComponent implements OnInit {
       : 0;
   }
 
-  // getAccumulatedList(values: number[]) {
-  //   values.reduce((previousValue, currentValue, currentIndex) => )
-  // }
-  // myarray.reduce(function(a,b,i) { return new_array[i] = a+b; },0);
+  getAccumulatedList(values: number[]): number[] {
+    const accumulatedList = [];
+    values.reduce((previous, current, index) => accumulatedList[index] = previous + current, 0);
+    return accumulatedList;
+  }
 }
