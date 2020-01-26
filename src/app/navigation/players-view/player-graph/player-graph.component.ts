@@ -10,6 +10,8 @@ import {StatPerPlayer} from '../../../models/stat-per-player.model';
 export class PlayerGraphComponent implements OnInit {
   player: StatPerPlayer;
   accumulatedPlayer: StatPerPlayer;
+  perMatchTitle = 'Stats per match';
+  accumulatedTitle = 'Accumulated stats';
 
   constructor(private route: ActivatedRoute) {
   }
@@ -32,7 +34,6 @@ export class PlayerGraphComponent implements OnInit {
         matchesPlayed
       };
 
-      // TODO larsne: accumulate goals, assists and points
       this.accumulatedPlayer = {
         name,
         teamName,

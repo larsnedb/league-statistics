@@ -1,3 +1,5 @@
+<h2>{{title}}</h2>
+
 <ngx-charts-line-chart
   [view]="view"
   [scheme]="colorScheme"
@@ -10,5 +12,7 @@
   [yAxisLabel]="yAxisLabel"
   [animations]="true"
   [results]="multi"
+  [xAxisTickFormatting]="displayOnlyIntegers"
+  [yAxisTickFormatting]="displayOnlyIntegers"
 >
 </ngx-charts-line-chart>

@@ -9,6 +9,8 @@ import {StatPerPlayer} from '../../../models/stat-per-player.model';
 export class LineChartComponent implements OnInit {
 
   @Input() player: StatPerPlayer;
+  @Input() title: string;
+
   multi: any[];
 
   view: any[] = [700, 300];
@@ -20,7 +22,7 @@ export class LineChartComponent implements OnInit {
   yAxis = true;
   showYAxisLabel = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Match';
+  xAxisLabel = 'Matches played';
   yAxisLabel = 'Points';
 
 
@@ -51,5 +53,12 @@ export class LineChartComponent implements OnInit {
     const objects = [];
     values.forEach((value, index) => objects.push({name: index + 1, value}));
     return objects;
+  }
+
+  displayOnlyIntegers(value: number) {
+    if (value % 1 === 0) {
+      return value;
+    }
+    return '';
   }
 }
