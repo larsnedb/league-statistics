@@ -33,6 +33,7 @@ import {FormsModule} from '@angular/forms';
 import { PlayerGraphComponent } from './navigation/players-view/player-graph/player-graph.component';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { LineChartComponent } from './navigation/utils/line-chart/line-chart.component';
+import { CummulativeStandingsComponent } from './navigation/standings-view/cummulative-standings/cummulative-standings.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { LineChartComponent } from './navigation/utils/line-chart/line-chart.com
     PenaltiesTableComponent,
     DateNorwegianPipe,
     PlayerGraphComponent,
-    LineChartComponent
+    LineChartComponent,
+    CummulativeStandingsComponent
   ],
     imports: [
         BrowserModule,
