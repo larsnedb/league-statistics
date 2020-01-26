@@ -20,7 +20,7 @@ import {
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatchTopViewComponent} from './navigation/match-view/match-top-view/match-top-view.component';
 import {PlayersViewComponent} from './navigation/players-view/player-overview/players-view.component';
-import {StandingsComponent} from './navigation/teams-view/standings.component';
+import {StandingsComponent} from './navigation/standings-view/standings.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
 import {MatchDetailsComponent} from './navigation/match-view/match-details/match-details.component';
 import {RouterModule} from '@angular/router';
@@ -31,7 +31,7 @@ import {DateNorwegianPipe} from './pipes/date-norwegian.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { PlayerGraphComponent } from './navigation/players-view/player-graph/player-graph.component';
-import {NgxChartsModule} from "@swimlane/ngx-charts";
+import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { LineChartComponent } from './navigation/utils/line-chart/line-chart.component';
 
 @NgModule({
