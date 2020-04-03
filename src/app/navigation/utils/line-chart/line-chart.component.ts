@@ -31,7 +31,9 @@ export class LineChartComponent implements OnInit {
       '#7aa3e5',
       '#a8385d',
       '#aae3f5',
-      '#000000'
+      '#000000',
+      '#aaaaaa',
+      '#eeeeee'
       // todo larsne: Add more colors here. Should maybe be parameterized for different usages?
       // Or can this component define a lot of colors, and it will only use the one it needs.
     ]

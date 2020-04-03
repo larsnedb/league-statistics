@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatchService} from '../../services/match.service';
 import {LeagueEntry} from '../../models/league-entry.model';
+import {DataSeriesUtil} from '../utils/data-series.util';
 
 @Component({
   selector: 'app-teams-view',
@@ -29,6 +30,6 @@ export class StandingsComponent implements OnInit {
   }
 
   private getSum(values: number[]) {
-    return values.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    return DataSeriesUtil.sumValues(values);
   }
 }

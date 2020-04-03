@@ -1,6 +1,6 @@
 import {LeagueTeam} from './league-team.model';
 
 export interface LeagueEntry {
-  teamName?: string;
-  stats?: LeagueTeam;
+  teamName: string;
+  stats: LeagueTeam;
 }

@@ -80,7 +80,7 @@ export class PlayerGraphComponent implements OnInit {
       .map(value => parseInt(value, 10));
   }
 
-  sumValues(values: number[]) {
+  sumValues(values: number[]): number {
     return values.reduce((a, b) => a + b, 0);
   }
 
