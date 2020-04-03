@@ -80,6 +80,10 @@ export class PlayerGraphComponent implements OnInit {
       .map(value => parseInt(value, 10));
   }
 
+  sumValues(values: number[]) {
+    return values.reduce((a, b) => a + b, 0);
+  }
+
   getPointsAverage(points: number[], matchesPlayed: number) {
     const totalPoints = DataSeriesUtil.sumValues(points);
     return matchesPlayed !== 0
