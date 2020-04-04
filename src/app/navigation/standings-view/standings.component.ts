@@ -26,10 +26,7 @@ export class StandingsComponent implements OnInit {
   }
 
   private getGoalDifference(entry: LeagueEntry) {
-    return this.getSum(entry.stats.goalsFor) - this.getSum(entry.stats.goalsAgainst);
-  }
-
-  private getSum(values: number[]) {
-    return DataSeriesUtil.sumValues(values);
+    return DataSeriesUtil.sumValues(entry.stats.goalsFor)
+      - DataSeriesUtil.sumValues(entry.stats.goalsAgainst);
   }
 }

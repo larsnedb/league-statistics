@@ -34,6 +34,7 @@ import { PlayerGraphComponent } from './navigation/players-view/player-graph/pla
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { LineChartComponent } from './navigation/utils/line-chart/line-chart.component';
 import { CummulativeStandingsComponent } from './navigation/standings-view/cummulative-standings/cummulative-standings.component';
+import { TableStandingsComponent } from './navigation/standings-view/table-standings/table-standings.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CummulativeStandingsComponent } from './navigation/standings-view/cummu
     DateNorwegianPipe,
     PlayerGraphComponent,
     LineChartComponent,
-    CummulativeStandingsComponent
+    CummulativeStandingsComponent,
+    TableStandingsComponent
   ],
     imports: [
         BrowserModule,
