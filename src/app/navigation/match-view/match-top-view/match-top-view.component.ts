@@ -10,7 +10,7 @@ import {MatchReport} from '../../../models/match-report.model';
 export class MatchTopViewComponent implements OnInit {
 
   matches: MatchReport[];
-  columnsToDisplay: string[] = ['date', 'homeTeam', 'awayTeam', 'location'];
+  columnsToDisplay: string[] = ['date', 'homeTeam', 'awayTeam', 'location', 'result'];
 
   constructor(private matchService: MatchService) {
   }
