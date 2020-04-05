@@ -11711,13 +11711,23 @@ export class MatchService {
     }
   ];
 
-  // should return matches sorted by MatchDate
   getAllMatches(): MatchReport[] {
     const simples = [];
     this.matches.forEach(complex => {
       simples.push(this.simplifyMatchObject(complex));
     });
+    simples.sort(this.sortByMatchDate());
     return simples;
+  }
+
+  private sortByMatchDate() {
+    return (a: MatchReport, b: MatchReport) => {
+      const aDate = new Date(a.info.MatchDate);
+      const bDate = new Date(b.info.MatchDate);
+      return aDate > bDate ? 1
+        : aDate < bDate ? -1
+          : 0;
+    };
   }
 
   getMatch(id: number): MatchReport {
