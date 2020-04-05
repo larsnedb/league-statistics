@@ -25,7 +25,7 @@ export class MatchDetailsComponent implements OnInit {
   ngOnInit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.match = this.matchService.getMatch(parseInt(id, 10));
-    this.goals = this.match.goals.GoalsInOrder;
+    this.goals = this.match.goals.goalsInOrder;
     this.penalties = this.match.pens;
     this.matchInfo = this.match.info;
   }
