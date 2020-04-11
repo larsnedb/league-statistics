@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {LeagueEntry} from '../../../models/league-entry.model';
 import {DataSeriesUtil} from '../../utils/data-series.util';
 
@@ -7,7 +7,7 @@ import {DataSeriesUtil} from '../../utils/data-series.util';
   templateUrl: './table-standings.component.html',
   styleUrls: ['./table-standings.component.css']
 })
-export class TableStandingsComponent {
+export class TableStandingsComponent implements OnInit {
 
   constructor() {
   }
@@ -16,6 +16,13 @@ export class TableStandingsComponent {
 
   columnsToDisplay: string[] = ['teamName', 'matches', 'victories', 'victory-penalty', 'loss-penalty', 'loss', 'goalsFor',
     'goalsAgainst', 'goalDiff', 'points'];
+
+  ngOnInit() {
+    this.matchData
+      .sort((a, b) =>
+        (this.getSum(a.stats.points) < this.getSum(b.stats.points) ? 1 : -1));
+        // this does not account for neither goal difference or innbyrdes oppgjør
+  }
 
   private getSum(numbers: number[]): number {
     return DataSeriesUtil.sumValues(numbers);

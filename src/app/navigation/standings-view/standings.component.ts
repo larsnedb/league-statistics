@@ -19,14 +19,6 @@ export class StandingsComponent implements OnInit {
     'goalsAgainst', 'goalDiff', 'points'];
 
   ngOnInit() {
-    this.matches = this.matchService.getSummaryPerTeam()
-      .sort((a, b) =>
-        (a.stats.points < b.stats.points)
-          ? 1 : (this.getGoalDifference(a) < this.getGoalDifference(b)) ? 1 : -1);
-  }
-
-  private getGoalDifference(entry: LeagueEntry) {
-    return DataSeriesUtil.sumValues(entry.stats.goalsFor)
-      - DataSeriesUtil.sumValues(entry.stats.goalsAgainst);
+    this.matches = this.matchService.getSummaryPerTeam();
   }
 }
