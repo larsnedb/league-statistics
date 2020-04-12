@@ -1,5 +1,10 @@
 {
   "extends": "tslint:recommended",
+  "linterOptions": {
+    "exclude": [
+      "src/app/services/match.service.ts"
+    ]
+  },
   "rules": {
     "no-string-literal": false,
     "array-type": false,
