@@ -12,6 +12,7 @@ import {
   MatIconModule,
   MatListModule,
   MatMenuModule,
+  MatPaginatorModule,
   MatSelectModule,
   MatSortModule,
   MatTableModule,
@@ -71,7 +72,8 @@ import { TableStandingsComponent } from './navigation/standings-view/table-stand
         MatListModule,
         MatDialogModule,
         FormsModule,
-        NgxChartsModule
+        NgxChartsModule,
+        MatPaginatorModule
     ],
   providers: [],
   bootstrap: [AppComponent]

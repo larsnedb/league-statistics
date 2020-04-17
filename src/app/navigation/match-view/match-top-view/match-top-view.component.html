@@ -1,6 +1,6 @@
 <p>League matches</p>
 
-<table mat-table [dataSource]="matches">
+<table mat-table [dataSource]="filteredMatches">
 
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef>Date</th>
@@ -31,3 +31,9 @@
   <tr mat-row *matRowDef="let match; columns: columnsToDisplay;" [routerLink]="[match.info.MatchNo]"></tr>
 
 </table>
+
+<mat-paginator [length]="matches.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="handlePagination($event)">
+</mat-paginator>
