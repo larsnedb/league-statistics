@@ -17,7 +17,7 @@ export class PlayersViewComponent implements OnInit {
   constructor(private matchService: MatchService) {
   }
 
-  columnsToDisplay = ['playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points'];
+  columnsToDisplay = ['playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points', 'penalties'];
   dataSource: any;
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -57,13 +57,15 @@ export class PlayersViewComponent implements OnInit {
         existingStat.points.push(player.Points);
         existingStat.goals.push(player.Goals);
         existingStat.assists.push(player.Assists);
+        existingStat.penalties.push(player.Penalties);
       } else {
         const newStat: StatPerPlayer = {
           teamName,
           matchesPlayed: 1,
           points: [player.Points],
           goals: [player.Goals],
-          assists: [player.Assists]
+          assists: [player.Assists],
+          penalties: [player.Penalties]
         };
         statPerPlayer.set(player.FullName, newStat);
       }
@@ -79,7 +81,8 @@ export class PlayersViewComponent implements OnInit {
         points: value.points,
         goals: value.goals,
         assists: value.assists,
-        matchesPlayed: value.matchesPlayed
+        matchesPlayed: value.matchesPlayed,
+        penalties: value.penalties
       });
     });
     return players.sort(((a, b) => this.comparePlayersSortForLeaderboard(a, b)));
@@ -103,7 +106,8 @@ export class PlayersViewComponent implements OnInit {
         } else if (aAssists === bAssists) {
           if (a.matchesPlayed < b.matchesPlayed) {
             return -1;
-          }}
+          }
+        }
       }
       return 1;
     }

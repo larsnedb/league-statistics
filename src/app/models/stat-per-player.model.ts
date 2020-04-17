@@ -5,4 +5,5 @@ export interface StatPerPlayer {
   points: number[];
   goals: number[];
   assists: number[];
+  penalties: number[];
 }
