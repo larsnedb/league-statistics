@@ -33,7 +33,31 @@ export class PlayersViewComponent implements OnInit {
     this.players = this.convertMapToList(matchDataPerPlayer);
 
     this.dataSource = new MatTableDataSource(this.players);
+    this.dataSource.sortingDataAccessor = (item: StatPerPlayer, property: string) => {
+      return this.getSortingDataAccessor(property, item);
+    };
     this.dataSource.sort = this.sort;
+  }
+
+  private getSortingDataAccessor(property: string, item: StatPerPlayer) {
+    switch (property) {
+      case 'matchesPlayed':
+        return item.matchesPlayed;
+      case 'playerPoints':
+        return this.sumValues(item.points);
+      case 'playerGoals':
+        return this.sumValues(item.goals);
+      case 'playerAssists':
+        return this.sumValues(item.assists);
+      case 'playerPenalties':
+        return this.sumValues(item.penalties);
+      case 'playerName':
+        return item.name;
+      case 'teamName':
+        return item.teamName;
+      default:
+        return item;
+    }
   }
 
   private extractPlayersFromMatches(): Map<string, StatPerPlayer> {
@@ -114,7 +138,7 @@ export class PlayersViewComponent implements OnInit {
   }
 
   filterTeam(teamName: string) {
-    let selectedPlayers: StatPerPlayer[] = [];
+    let selectedPlayers: StatPerPlayer[];
     if (teamName === 'All teams') {
       selectedPlayers = this.players;
     } else {

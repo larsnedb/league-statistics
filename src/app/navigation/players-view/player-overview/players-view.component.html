@@ -12,40 +12,42 @@
 <p>You selected: {{selectedTeam}}</p>
 
 
-<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" matSort
+       matSortActive="playerPoints" matSortDirection="desc" matSortStart="desc"
+       class="mat-elevation-z8">
 
   <ng-container matColumnDef="playername">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>Player</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="playerName">Player</th>
     <td mat-cell *matCellDef="let player"> {{player.name}}</td>
   </ng-container>
 
   <ng-container matColumnDef="teamName">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>Team</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="teamName">Team</th>
     <td mat-cell *matCellDef="let player"> {{player.teamName}} </td>
   </ng-container>
 
   <ng-container matColumnDef="matchesPlayed">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>K</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="matchesPlayed">K</th>
     <td mat-cell *matCellDef="let player"> {{player.matchesPlayed}} </td>
   </ng-container>
 
   <ng-container matColumnDef="goals">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>M</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="playerGoals">M</th>
     <td mat-cell *matCellDef="let player"> {{sumValues(player.goals)}} </td>
   </ng-container>
 
   <ng-container matColumnDef="assists">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>A</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="playerAssists">A</th>
     <td mat-cell *matCellDef="let player"> {{sumValues(player.assists)}} </td>
   </ng-container>
 
   <ng-container matColumnDef="points">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>P</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="playerPoints">P</th>
     <td mat-cell *matCellDef="let player"> {{sumValues(player.points)}} </td>
   </ng-container>
 
   <ng-container matColumnDef="penalties">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>PIM</th>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="playerPenalties">PIM</th>
     <td mat-cell *matCellDef="let player"> {{sumValues(player.penalties)}} </td>
   </ng-container>
 
