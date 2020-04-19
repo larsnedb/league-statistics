@@ -8,5 +8,11 @@
 
 {{player | json}}
 
-<app-line-chart [title]="perMatchTitle" [dataSeries]="data"></app-line-chart>
-<app-line-chart [title]="accumulatedTitle" [dataSeries]="accData"></app-line-chart>
+<mat-tab-group>
+  <mat-tab label="Points per match">
+    <app-line-chart [title]="perMatchTitle" [dataSeries]="data"></app-line-chart>
+  </mat-tab>
+  <mat-tab label="Points accumulated">
+    <app-line-chart [title]="accumulatedTitle" [dataSeries]="accData"></app-line-chart>
+  </mat-tab>
+</mat-tab-group>
