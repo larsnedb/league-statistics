@@ -27,6 +27,7 @@ export class PlayerGraphComponent implements OnInit {
       const goals = this.parseNumberArray(params['goals']);
       const assists = this.parseNumberArray(params['assists']);
       const matchesPlayed = +params['matchesPlayed'];
+      const penalties = this.parseNumberArray(params['penalties']);
 
       this.player = {
         name,
@@ -34,7 +35,8 @@ export class PlayerGraphComponent implements OnInit {
         points,
         goals,
         assists,
-        matchesPlayed
+        matchesPlayed,
+        penalties
       };
 
       this.accumulatedPlayer = {
@@ -43,7 +45,8 @@ export class PlayerGraphComponent implements OnInit {
         points: DataSeriesUtil.getAccumulatedList(points),
         goals: DataSeriesUtil.getAccumulatedList(goals),
         assists: DataSeriesUtil.getAccumulatedList(assists),
-        matchesPlayed
+        matchesPlayed,
+        penalties: DataSeriesUtil.getAccumulatedList(penalties)
       };
     });
     this.data = [
