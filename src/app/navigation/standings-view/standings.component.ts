@@ -18,6 +18,7 @@ export class StandingsComponent implements OnInit {
   columnsToDisplay: string[] = ['teamName', 'matches', 'victories', 'victory-penalty', 'loss-penalty', 'loss', 'goalsFor',
     'goalsAgainst', 'goalDiff', 'points'];
 
+  // todo: larsne HTML should separate between sub tabs. One for "normal" table, and one for cummulative graph
   ngOnInit() {
     this.matches = this.matchService.getSummaryPerTeam();
   }

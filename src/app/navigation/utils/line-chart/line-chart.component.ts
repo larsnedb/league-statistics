@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {DataSeries} from '../../../models/data-series.model';
 
 @Component({
   selector: 'app-line-chart',
@@ -8,8 +9,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class LineChartComponent implements OnInit {
 
   @Input() title: string;
-  @Input() dataSeries: any;
+  @Input() dataSeries: DataSeries[];
 
+  // todo: larsne Graph should cover screen (be much larger)
   view: any[] = [700, 300];
 
   // options
@@ -21,7 +23,7 @@ export class LineChartComponent implements OnInit {
   showXAxisLabel = true;
   xAxisLabel = 'Matches played';
   yAxisLabel = 'Points';
-
+  xTicks: number[];
 
   colorScheme = {
     domain: [
@@ -43,6 +45,15 @@ export class LineChartComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.xTicks = this.getXTicks();
+  }
+
+  getXTicks() {
+    const ticks = [];
+    for (let i = 1; i < this.dataSeries[0].series.length; i++) {
+      ticks.push(i);
+    }
+    return ticks;
   }
 
   displayOnlyIntegers(value: number) {

@@ -2,19 +2,25 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {StatPerPlayer} from '../../../models/stat-per-player.model';
 import {DataSeriesUtil} from '../../utils/data-series.util';
+import {DataSeries} from '../../../models/data-series.model';
 
 @Component({
   selector: 'app-player-graph-component',
   templateUrl: './player-graph.component.html',
   styleUrls: ['./player-graph.component.css']
 })
+// todo: larsne Should split into smaller subcomponents? Maybe separate component for goals and penalties
 export class PlayerGraphComponent implements OnInit {
   player: StatPerPlayer;
   accumulatedPlayer: StatPerPlayer;
+
+  // todo: larsne Penalty graphs have "points" in y-axis
   perMatchTitle = 'Stats per match';
   accumulatedTitle = 'Accumulated stats';
-  data: any;
-  accData: any;
+  data: DataSeries[];
+  accData: DataSeries[];
+  penaltyData: DataSeries[];
+  accPenaltyData: DataSeries[];
 
   constructor(private route: ActivatedRoute) {
   }
@@ -75,6 +81,18 @@ export class PlayerGraphComponent implements OnInit {
       {
         name: 'Assists',
         series: DataSeriesUtil.mapToCummulativeDataSeries(this.player.assists)
+      }];
+
+    this.penaltyData = [
+      {
+        name: 'Penalties',
+        series: DataSeriesUtil.mapToDataSeries(this.player.penalties)
+      }];
+
+    this.accPenaltyData = [
+      {
+        name: 'Penalties',
+        series: DataSeriesUtil.mapToCummulativeDataSeries(this.player.penalties)
       }];
   }
 
