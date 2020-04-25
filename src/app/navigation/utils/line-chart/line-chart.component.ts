@@ -8,11 +8,10 @@ import {DataSeries} from '../../../models/data-series.model';
 })
 export class LineChartComponent implements OnInit {
 
-  @Input() title: string;
   @Input() dataSeries: DataSeries[];
 
   // todo: larsne Graph should cover screen (be much larger)
-  view: any[] = [700, 300];
+  view: any[] = [900, 500];
 
   // options
   legend = true;

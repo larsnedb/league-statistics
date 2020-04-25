@@ -6,19 +6,27 @@
 <p>Number of goals: {{this.sumValues(player.goals)}}</p>
 <p>Number of assists: {{this.sumValues(player.assists)}}</p>
 
-{{player | json}}
+<!--{{player | json}}-->
 
 <mat-tab-group [dynamicHeight]="true">
   <mat-tab label="Points per match">
-    <app-line-chart [title]="perMatchTitle" [dataSeries]="data"></app-line-chart>
+    <div class="graphComponent">
+      <app-line-chart [dataSeries]="data"></app-line-chart>
+    </div>
   </mat-tab>
   <mat-tab label="Points accumulated">
-    <app-line-chart [title]="accumulatedTitle" [dataSeries]="accData"></app-line-chart>
+    <div class="graphComponent">
+      <app-line-chart [dataSeries]="accData"></app-line-chart>
+    </div>
   </mat-tab>
   <mat-tab label="Penalties per match">
-    <app-line-chart [title]="perMatchTitle" [dataSeries]="penaltyData"></app-line-chart>
+    <div class="graphComponent">
+      <app-line-chart [dataSeries]="penaltyData"></app-line-chart>
+    </div>
   </mat-tab>
   <mat-tab label="Penalties accumulated">
-    <app-line-chart [title]="accumulatedTitle" [dataSeries]="accPenaltyData"></app-line-chart>
+    <div class="graphComponent">
+      <app-line-chart [dataSeries]="accPenaltyData"></app-line-chart>
+    </div>
   </mat-tab>
 </mat-tab-group>

@@ -10,7 +10,6 @@ import {DataSeriesUtil} from '../../utils/data-series.util';
 export class CummulativeStandingsComponent implements OnInit {
 
   @Input() matchData: LeagueEntry[];
-  perMatchTitle = 'Cummulative standings - league progress';
   data = [];
 
   constructor() { }

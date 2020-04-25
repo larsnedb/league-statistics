@@ -15,8 +15,6 @@ export class PlayerGraphComponent implements OnInit {
   accumulatedPlayer: StatPerPlayer;
 
   // todo: larsne Penalty graphs have "points" in y-axis
-  perMatchTitle = 'Stats per match';
-  accumulatedTitle = 'Accumulated stats';
   data: DataSeries[];
   accData: DataSeries[];
   penaltyData: DataSeries[];
