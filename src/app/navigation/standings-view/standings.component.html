@@ -1,5 +1,9 @@
-<p>All teams</p>
 
-<app-table-standings [matchData]="matches"></app-table-standings>
-
-<app-cummulative-standings [matchData]="matches"></app-cummulative-standings>
+<mat-tab-group>
+  <mat-tab label="League standings">
+    <app-table-standings [matchData]="matches"></app-table-standings>
+  </mat-tab>
+  <mat-tab label="Cummulative standings">
+    <app-cummulative-standings [matchData]="matches"></app-cummulative-standings>
+  </mat-tab>
+</mat-tab-group>
