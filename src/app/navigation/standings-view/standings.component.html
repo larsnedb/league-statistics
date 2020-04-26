@@ -1,8 +1,14 @@
-<mat-tab-group>
-  <mat-tab label="League standings">
-    <app-table-standings [matchData]="matches"></app-table-standings>
-  </mat-tab>
-  <mat-tab label="Cummulative standings">
-    <app-cummulative-standings [matchData]="matches"></app-cummulative-standings>
-  </mat-tab>
-</mat-tab-group>
+<div class="top-air">
+  <mat-tab-group>
+    <mat-tab label="League standings">
+      <div class="graphComponent">
+        <app-table-standings [matchData]="matches"></app-table-standings>
+      </div>
+    </mat-tab>
+    <mat-tab label="Cummulative standings">
+      <div class="graphComponent">
+        <app-cummulative-standings [matchData]="matches"></app-cummulative-standings>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
