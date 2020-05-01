@@ -1,16 +1,13 @@
-<h3>Players</h3>
+<h3>Player statistics</h3>
 
 
 <mat-form-field>
   <mat-label>Choose team</mat-label>
-  <mat-select [(value)]="selectedTeam" (valueChange)="filterTeam($event)">
+  <mat-select (selectionChange)="filterByTeam(selectedTeam)" [(ngModel)]="selectedTeam">
     <mat-option value="All teams">All teams</mat-option>
-    <mat-option value="BMIL">BMIL</mat-option>
+    <mat-option *ngFor="let teamName of allTeamNames" [value]="teamName">{{teamName}}</mat-option>
   </mat-select>
 </mat-form-field>
-
-<p>You selected: {{selectedTeam}}</p>
-
 
 <table mat-table [dataSource]="dataSource" matSort
        matSortActive="playerPoints" matSortDirection="desc" matSortStart="desc"

@@ -22,23 +22,17 @@ export class PlayersViewComponent implements OnInit {
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  // todo: Sorting by player name does not work
-
   selectedTeam = 'All teams';
-  teamNames: Set<string> = new Set();
+  allTeamNames: string[] = [];
   players: StatPerPlayer[] = [];
+
+  // todo larsne: Hovering table (both standings and players) should give clickable feedback
 
   ngOnInit() {
     const matchDataPerPlayer: Map<string, StatPerPlayer> = this.extractPlayersFromMatches();
     this.players = this.convertMapToList(matchDataPerPlayer);
-
     this.players.forEach((player, index) => player.rank = index);
-
-    this.dataSource = new MatTableDataSource(this.players);
-    this.dataSource.sortingDataAccessor = (item: StatPerPlayer, property: string) => {
-      return this.getSortingDataAccessor(property, item);
-    };
-    this.dataSource.sort = this.sort;
+    this.initDataSourceWithSorting(this.players);
   }
 
   private getSortingDataAccessor(property: string, item: StatPerPlayer) {
@@ -64,18 +58,23 @@ export class PlayersViewComponent implements OnInit {
 
   private extractPlayersFromMatches(): Map<string, StatPerPlayer> {
     const statPerPlayer: Map<string, StatPerPlayer> = new Map<string, StatPerPlayer>();
+    const teamNames: Set<string> = new Set();
     this.matchService.getAllMatches().forEach(match => {
       const participants: MatchParticipants = match.participants;
       const matchInfo: MatchInfo = match.info;
 
-      this.extractInfoFromPlayers(statPerPlayer, participants.HomePlayers, matchInfo.HomeTeamName);
-      this.extractInfoFromPlayers(statPerPlayer, participants.AwayPlayers, matchInfo.AwayTeamName);
+      this.extractInfoFromPlayers(statPerPlayer, participants.HomePlayers, matchInfo.HomeTeamName, teamNames);
+      this.extractInfoFromPlayers(statPerPlayer, participants.AwayPlayers, matchInfo.AwayTeamName, teamNames);
     });
+    this.allTeamNames = Array.from(teamNames).sort();
     return statPerPlayer;
   }
 
-  private extractInfoFromPlayers(statPerPlayer: Map<string, StatPerPlayer>, players: MatchPlayer[], teamName: string) {
-    this.teamNames.add(teamName);
+  private extractInfoFromPlayers(statPerPlayer: Map<string, StatPerPlayer>,
+                                 players: MatchPlayer[],
+                                 teamName: string,
+                                 teamNames: Set<string>) {
+    teamNames.add(teamName);
     players.forEach(player => {
       if (statPerPlayer.get(player.FullName)) {
         const existingStat = statPerPlayer.get(player.FullName);
@@ -139,14 +138,21 @@ export class PlayersViewComponent implements OnInit {
     }
   }
 
-  filterTeam(teamName: string) {
+  filterByTeam(teamName: string) {
     let selectedPlayers: StatPerPlayer[];
     if (teamName === 'All teams') {
       selectedPlayers = this.players;
     } else {
       selectedPlayers = this.players.filter((player: StatPerPlayer) => player.teamName === teamName);
     }
+    this.initDataSourceWithSorting(selectedPlayers);
+  }
+
+  private initDataSourceWithSorting(selectedPlayers: StatPerPlayer[]) {
     this.dataSource = new MatTableDataSource(selectedPlayers);
+    this.dataSource.sortingDataAccessor = (item: StatPerPlayer, property: string) => {
+      return this.getSortingDataAccessor(property, item);
+    };
     this.dataSource.sort = this.sort;
   }
 
