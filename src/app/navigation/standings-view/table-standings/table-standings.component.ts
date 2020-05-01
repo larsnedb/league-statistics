@@ -14,7 +14,7 @@ export class TableStandingsComponent implements OnInit {
 
   @Input() matchData: LeagueEntry[];
 
-  columnsToDisplay: string[] = ['teamName', 'matches', 'victories', 'victory-penalty', 'loss-penalty', 'loss', 'goalsFor',
+  columnsToDisplay: string[] = ['rank', 'teamName', 'matches', 'victories', 'victory-penalty', 'loss-penalty', 'loss', 'goalsFor',
     'goalsAgainst', 'goalDiff', 'points'];
 
   ngOnInit() {

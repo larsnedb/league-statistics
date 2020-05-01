@@ -16,6 +16,11 @@
        matSortActive="playerPoints" matSortDirection="desc" matSortStart="desc"
        class="mat-elevation-z8">
 
+  <ng-container matColumnDef="rank">
+    <th mat-header-cell *matHeaderCellDef>Rank</th>
+    <td mat-cell *matCellDef="let player"> {{ player.rank + 1 }}</td>
+  </ng-container>
+
   <ng-container matColumnDef="playername">
     <th mat-header-cell *matHeaderCellDef mat-sort-header="playerName">Player</th>
     <td mat-cell *matCellDef="let player"> {{player.name}}</td>

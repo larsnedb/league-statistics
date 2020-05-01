@@ -17,7 +17,7 @@ export class PlayersViewComponent implements OnInit {
   constructor(private matchService: MatchService) {
   }
 
-  columnsToDisplay = ['playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points', 'penalties'];
+  columnsToDisplay = ['rank', 'playername', 'teamName', 'matchesPlayed', 'goals', 'assists', 'points', 'penalties'];
   dataSource: any;
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -31,6 +31,8 @@ export class PlayersViewComponent implements OnInit {
   ngOnInit() {
     const matchDataPerPlayer: Map<string, StatPerPlayer> = this.extractPlayersFromMatches();
     this.players = this.convertMapToList(matchDataPerPlayer);
+
+    this.players.forEach((player, index) => player.rank = index);
 
     this.dataSource = new MatTableDataSource(this.players);
     this.dataSource.sortingDataAccessor = (item: StatPerPlayer, property: string) => {
