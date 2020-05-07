@@ -1,4 +1,9 @@
 # Leaguestatistics
+This project is work in progress, and is an SPA written in Angular
+
+Yours truly is an active floorball player. A lot of match data is publicly available on Bandyforbundet's websites. A lot of processed data already exists, such as league standings and top scorer tables. This is however, my representation of the same data, plus a little more. Some tables, lists and also some cool graphs. Individual player data, and evolution throughout the season. A fun way to learn to use Angular in a non-trivial web application. It is also more fun when I actually have some insights in the data I'm processing.
+
+I have scraped these online resources, and parsed it into JSON-objects which I use in further processing. Currently, they are listed as static resources inside this app. Some beautiful day, they will be moved to a backend written in Kotlin. And persist data in a NoSQL-database, or even a graph database. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
