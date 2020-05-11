@@ -5,6 +5,7 @@ import {PlayersViewComponent} from './navigation/players-view/player-overview/pl
 import {StandingsComponent} from './navigation/standings-view/standings.component';
 import {StatisticsViewComponent} from './navigation/statistics-view/statistics-view.component';
 import {PlayerGraphComponent} from './navigation/players-view/player-graph/player-graph.component';
+import {RefereeViewComponent} from './navigation/referee-view/referee-view.component';
 
 export const appRoutes: Routes = [
   {path: '', redirectTo: '/matches', pathMatch: 'full'},
@@ -14,4 +15,5 @@ export const appRoutes: Routes = [
   {path: 'players/:name', component: PlayerGraphComponent},
   {path: 'players', component: PlayersViewComponent},
   {path: 'statistics', component: StatisticsViewComponent},
+  {path: 'referees', component: RefereeViewComponent}
 ];

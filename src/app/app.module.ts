@@ -36,6 +36,7 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { LineChartComponent } from './navigation/utils/line-chart/line-chart.component';
 import { CummulativeStandingsComponent } from './navigation/standings-view/cummulative-standings/cummulative-standings.component';
 import { TableStandingsComponent } from './navigation/standings-view/table-standings/table-standings.component';
+import { RefereeViewComponent } from './navigation/referee-view/referee-view.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TableStandingsComponent } from './navigation/standings-view/table-stand
     PlayerGraphComponent,
     LineChartComponent,
     CummulativeStandingsComponent,
-    TableStandingsComponent
+    TableStandingsComponent,
+    RefereeViewComponent
   ],
     imports: [
         BrowserModule,
