@@ -1,1 +1,16 @@
-<p>referee-view works!</p>
+<h3>Referee data</h3>
+
+<div *ngFor="let data of refData | keyvalue ">
+  {{data.key}} - {{data.value}}
+</div>
+
+<p>
+Total number of matches: {{totalMatches/2}}
+</p>
+
+<ul>
+<li>Need to add rest of matches to matchService.</li>
+<li>Fetch penalty data and attach to referees</li>
+<li>Create table with columns: name, number of pens 2, number of pens 5, number of goals both ways, and more...</li>
+</ul>
+
